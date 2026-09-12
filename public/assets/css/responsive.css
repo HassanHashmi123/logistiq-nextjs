@@ -3740,3 +3740,12 @@ html, body {
         line-height: 36px !important;
     }
 }
+
+/* Optimize Mobile Hero Banner rendering without flicker */
+@media (max-width: 991px) {
+    .banner-one__content-left,
+    .banner-one__content-right {
+        animation-duration: 0.8s !important;
+        -webkit-animation-duration: 0.8s !important;
+    }
+}
