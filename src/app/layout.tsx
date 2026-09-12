@@ -162,15 +162,7 @@ export default function RootLayout({
               });
             }
 
-            // 3. Mobile menu
-            if ($('.mobile-nav__toggler').length) {
-              $('.mobile-nav__toggler').on('click', function(e) {
-                e.preventDefault();
-                $('.mobile-nav__wrapper').toggleClass('mobile-nav__wrapper--active');
-              });
-            }
-
-            // 4. Search popup
+            // 3. Search popup
             if ($('.search-toggler').length) {
               $('.search-toggler').on('click', function(e) {
                 e.preventDefault();
@@ -178,29 +170,10 @@ export default function RootLayout({
               });
             }
 
-            // 5. Sticky header clone
+            // 4. Sticky header clone
             if ($('.stricked-menu .sticky-header__content').length) {
               var strickyContent = $('.main-menu').html();
               $('.stricked-menu .sticky-header__content').html(strickyContent);
-            }
-
-            // 6. Dropdown menu toggle for mobile
-            if ($('.main-menu__list').length) {
-              var mobileNavContent = $('.main-menu__list').html();
-              var mobileNavContainer = $('.mobile-nav__container');
-              if (mobileNavContainer.length && mobileNavContainer.html().trim() === '') {
-                mobileNavContainer.html('<ul class="main-menu__list">' + mobileNavContent + '</ul>');
-                // Add dropdowns
-                mobileNavContainer.find('.dropdown > a').each(function() {
-                  var el = $(this);
-                  el.after('<button class="expanded"><i class="fa fa-angle-down"></i></button>');
-                });
-                mobileNavContainer.find('.expanded').on('click', function(e) {
-                  e.preventDefault();
-                  $(this).toggleClass('open');
-                  $(this).next('ul').slideToggle(300);
-                });
-              }
             }
 
             // 7. Scroll to top

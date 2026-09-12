@@ -40,29 +40,7 @@
       }
 
       // ========== 3. MOBILE NAV ==========
-      if ($('.main-menu__list').length && $('.mobile-nav__container').length) {
-        var navHTML = $('.main-menu .main-menu__list').html();
-        var mobileContainer = $('.mobile-nav__container');
-        if (mobileContainer.html().trim() === '') {
-          mobileContainer.html('<ul class="main-menu__list">' + navHTML + '</ul>');
-          // Add expander buttons
-          mobileContainer.find('li.dropdown > a').each(function() {
-            $(this).after('<button class="expanded"><i class="fa fa-angle-down"></i></button>');
-          });
-          // Bind expander click
-          mobileContainer.find('.expanded').off('click').on('click', function(e) {
-            e.preventDefault();
-            $(this).toggleClass('open');
-            $(this).next('ul').slideToggle(300);
-          });
-        }
-      }
-
-      // Mobile nav toggler
-      $('.mobile-nav__toggler').off('click').on('click', function(e) {
-        e.preventDefault();
-        $('.mobile-nav__wrapper').toggleClass('mobile-nav__wrapper--active');
-      });
+      // Managed seamlessly via React state in MobileMenu.tsx
 
       // ========== 4. SEARCH POPUP ==========
       $('.search-toggler').off('click').on('click', function(e) {

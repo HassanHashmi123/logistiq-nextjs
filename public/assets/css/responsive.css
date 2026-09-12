@@ -3539,15 +3539,204 @@
         padding-right: 15px;
         max-width: 100%;
     }
+}
 
+/* ==========================================================
+   GLOBAL MOBILE & RESPONSIVE ENHANCEMENTS FOR ALL DEVICES
+   ========================================================== */
 
+/* Prevent horizontal scroll / overflow globally on small devices */
+html, body {
+    overflow-x: hidden;
+    max-width: 100%;
+}
 
+.page-wrapper {
+    overflow-x: hidden;
+    width: 100%;
+    max-width: 100%;
+}
 
+/* Mobile Menu Expander Button Fixes */
+.mobile-nav__content .main-menu__list > li > button.expanded,
+.mobile-nav__content .main-menu__list > li > a > button.expanded {
+    position: absolute;
+    right: 15px;
+    top: 8px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background-color: var(--logistiq-base);
+    color: #ffffff;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 5;
+}
 
+.mobile-nav__content .main-menu__list > li {
+    position: relative;
+}
 
+.mobile-nav__content .main-menu__list > li > button.expanded.open i,
+.mobile-nav__content .main-menu__list > li > button.expanded.open {
+    transform: rotate(180deg);
+}
 
+.mobile-nav__content .main-menu__list > li > ul {
+    padding-left: 15px;
+    list-style: none;
+}
 
+.mobile-nav__content .main-menu__list > li > ul > li > a {
+    padding: 8px 0;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.75);
+    display: block;
+}
 
+.mobile-nav__content .main-menu__list > li > ul > li > a:hover {
+    color: var(--logistiq-base);
+}
 
+/* Tablet & Mobile Breakpoints for Banner One (Hero) */
+@media (max-width: 991px) {
+    .banner-one {
+        padding: 120px 0px 80px;
+    }
 
+    .banner-one__location {
+        display: none !important;
+    }
+
+    .banner-one__content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .banner-one__content-left {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .banner-one__content-left h2 {
+        font-size: 42px;
+        line-height: 1.2;
+    }
+
+    .banner-one__content-right {
+        padding-left: 0;
+        margin-left: 0;
+        border-left: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .banner-one__content-right::before {
+        display: none;
+    }
+
+    .banner-one__content-right-middle {
+        justify-content: center;
+        margin-bottom: 25px;
+    }
+
+    .banner-one__img1,
+    .banner-one__img5 {
+        display: none !important;
+    }
+
+    .about-one {
+        padding: 80px 0px 100px;
+    }
+
+    .about-one__content {
+        max-width: 100%;
+        margin-bottom: 50px;
+    }
+
+    .about-one__img {
+        max-width: 100%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+    .about-one__img1 {
+        max-width: 320px;
+        width: 100%;
+    }
+
+    .about-one__img2 {
+        position: relative;
+        bottom: auto;
+        right: auto;
+        margin-top: 30px;
+        max-width: 280px;
+        width: 100%;
+    }
+}
+
+/* Small mobile devices (< 576px) */
+@media (max-width: 575px) {
+    .banner-one {
+        padding: 90px 0px 60px;
+    }
+
+    .banner-one__content-left h2 {
+        font-size: 32px;
+        line-height: 1.25;
+    }
+
+    .banner-one__content-left p {
+        font-size: 14px;
+    }
+
+    .banner-one__content-right-text p {
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    .banner-one__content-right-middle {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .about-one__content-bottom {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .about-one__content-bottom .contact-box {
+        margin-left: 0;
+    }
+
+    .about-one__round-text-box {
+        display: none;
+    }
+
+    .about-one__img1 {
+        max-width: 260px;
+    }
+
+    .about-one__img2 {
+        max-width: 240px;
+    }
+
+    .sec-title__title {
+        font-size: 26px !important;
+        line-height: 36px !important;
+    }
 }
