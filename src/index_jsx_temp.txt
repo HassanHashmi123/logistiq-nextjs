@@ -1,0 +1,2573 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home One || Logistiq || Logistiq Laravel Template</title>
+
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicons/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicons/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicons/favicon-16x16.png" />
+    <link rel="manifest" href="assets/images/favicons/site.webmanifest" />
+    <meta name="description" content="Logistiq Laravel Template" />
+
+    
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&amp;display=swap" rel="stylesheet">
+
+    
+    <link rel="stylesheet" href="assets/css/01-bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/02-animate.min.css" />
+    <link rel="stylesheet" href="assets/css/03-custom-animate.css" />
+    <link rel="stylesheet" href="assets/css/05-flaticon.css" />
+    <link rel="stylesheet" href="assets/css/06-font-awesome-all.css" />
+    <link rel="stylesheet" href="assets/css/07-jarallax.css" />
+    <link rel="stylesheet" href="assets/css/08-jquery.magnific-popup.css" />
+    <link rel="stylesheet" href="assets/css/09-nice-select.css" />
+    <link rel="stylesheet" href="assets/css/11-owl.carousel.min.css" />
+    <link rel="stylesheet" href="assets/css/12-owl.theme.default.min.css" />
+    <link rel="stylesheet" href="assets/css/13-jquery-ui.css" />
+
+    
+            <link rel="stylesheet" href="assets/css/module-css/01-slider.css" />
+            <link rel="stylesheet" href="assets/css/module-css/02-about.css" />
+            <link rel="stylesheet" href="assets/css/module-css/03-services.css" />
+            <link rel="stylesheet" href="assets/css/module-css/04-testimonial.css" />
+            <link rel="stylesheet" href="assets/css/module-css/05-team.css" />
+            <link rel="stylesheet" href="assets/css/module-css/06-blog.css" />
+            <link rel="stylesheet" href="assets/css/module-css/07-brand.css" />
+            <link rel="stylesheet" href="assets/css/module-css/08-contact.css" />
+            <link rel="stylesheet" href="assets/css/module-css/09-counter.css" />
+            <link rel="stylesheet" href="assets/css/module-css/10-error.css" />
+            <link rel="stylesheet" href="assets/css/module-css/11-faq.css" />
+            <link rel="stylesheet" href="assets/css/module-css/12-footer.css" />
+            <link rel="stylesheet" href="assets/css/module-css/13-page-header.css" />
+            <link rel="stylesheet" href="assets/css/module-css/14-shop.css" />
+            <link rel="stylesheet" href="assets/css/module-css/15-video.css" />
+            <link rel="stylesheet" href="assets/css/module-css/awards.css" />
+            <link rel="stylesheet" href="assets/css/module-css/banner.css" />
+            <link rel="stylesheet" href="assets/css/module-css/cta.css" />
+            <link rel="stylesheet" href="assets/css/module-css/design-interior.css" />
+            <link rel="stylesheet" href="assets/css/module-css/feature.css" />
+            <link rel="stylesheet" href="assets/css/module-css/pricing.css" />
+            <link rel="stylesheet" href="assets/css/module-css/projects.css" />
+            <link rel="stylesheet" href="assets/css/module-css/quote.css" />
+            <link rel="stylesheet" href="assets/css/module-css/skill.css" />
+            <link rel="stylesheet" href="assets/css/module-css/sliding-text.css" />
+            <link rel="stylesheet" href="assets/css/module-css/why-choose.css" />
+            <link rel="stylesheet" href="assets/css/module-css/working-process.css" />
+    
+    <link rel="stylesheet" href="assets/css/swiper.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+
+
+
+    </head>
+<body ">
+
+
+    <div className="page-wrapper">
+        
+        
+        <header className="main-header main-header-one">
+            <nav className="main-menu">
+                <div className="main-menu__wrapper">
+                    <div className="container">
+                        <div className="main-header-one__inner">
+                            <div className="main-header-one__top">
+                                <div className="main-header-one__top-inner">
+                                    <div className="main-header-one__top-left">
+                                        <div className="header-contact-style1">
+                                            <ul>
+                                                <li>
+                                                    <div className="icon">
+                                                        <span className="icon-phone"></span>
+                                                    </div>
+
+                                                    <div className="text-box">
+                                                        <p><span>Talk to Us</span> <a href="tel:1234567890">[+123 456
+                                                                789]</a></p>
+                                                    </div>
+                                                </li>
+
+                                                <li>
+                                                    <div className="icon">
+                                                        <span className="icon-email"></span>
+                                                    </div>
+
+                                                    <div className="text-box">
+                                                        <p><span>Mail Us</span> <a
+                                                                href="mailto:yourmail@email.com">[support@logistra.com]</a>
+                                                        </p>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <div className="main-header-one__top-right">
+                                        <div className="header-social-links">
+                                            <a href="#"><span className="icon-facebook-f"></span></a>
+                                            <a href="#"><span className="icon-twitter1"></span></a>
+                                            <a href="#"><span className="icon-instagram"></span></a>
+                                            <a href="#"><span className="icon-linkedin"></span></a>
+                                        </div>
+
+                                        <div className="header-search-box">
+                                            <a href="#" className="main-menu__search search-toggler">Search
+                                                <i className="icon-search"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className="main-header-one__bottom">
+                                <div className="main-menu__wrapper-inner">
+                                    <div className="main-header-one__bottom-inner">
+                                        <div className="main-header-one__bottom-left">
+                                            <div className="logo-box">
+                                                <a href="index.html"><img src="assets/images/resources/logo-1.png"
+                                                        alt=""></a>
+                                            </div>
+
+                                            <div className="main-header-one__bottom-menu">
+                                                <div className="main-menu__main-menu-box">
+                                                    <a href="#" className="mobile-nav__toggler"><i
+                                                            className="fa fa-bars"></i></a>
+
+                                                    <ul className="main-menu__list">
+    <li className="dropdown ">
+        <a href="javascript:void(0)">Home</a>
+        <ul>
+            <li><a href="index.html">Home One</a></li>
+            <li><a href="index2.html">Home Two</a></li>
+            <li><a href="index3.html">Home Three</a></li>
+            <li><a href="index-dark.html">Home Dark</a></li>
+            <li className="dropdown">
+                <a href="#">Header Styles</a>
+                <ul>
+                    <li><a href="index.html">Header One</a></li>
+                    <li><a href="index2.html">Header Two</a></li>
+                    <li><a href="index3.html">Header Three</a></li>
+                </ul>
+            </li>
+            <li className="dropdown">
+                <a href="#">One Page Styles</a>
+                <ul>
+                    <li><a href="index-one-page.html">One Page Style One</a></li>
+                    <li><a href="index2-one-page.html">One Page Style Two</a></li>
+                    <li><a href="index3-one-page.html">One Page Style Three</a></li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+
+    <li className=""><a href="about.html">About Us</a></li>
+
+    <li className="dropdown ">
+        <a href="javascript:void(0)">Services</a>
+        <ul>
+            <li><a href="service.html">Services</a></li>
+            <li><a href="international-transport.html">International Transport</a></li>
+            <li><a href="track-transport.html">Local Track Transport</a></li>
+            <li><a href="personal-delivery.html">Fast Personal Delivery</a></li>
+            <li><a href="ocean-transport.html">Safe Ocean Transport</a></li>
+            <li><a href="warehouse-facility.html">Warehouse Facility</a></li>
+            <li><a href="emergency-transport.html">Emergency Transport</a></li>
+        </ul>
+    </li>
+
+    <li className="dropdown ">
+        <a href="javascript:void(0)">Pages</a>
+        <ul>
+            <li><a href="team.html">Team</a></li>
+            <li><a href="team-details.html">Team Details</a></li>
+            <li><a href="project.html">Projects</a></li>
+            <li><a href="project-details.html">Project Details</a></li>
+            <li><a href="testimonial.html">Testimonials</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="404.html">404 Error</a></li>
+        </ul>
+    </li>
+
+    <li className="dropdown ">
+        <a href="javascript:void(0)">Shop</a>
+        <ul>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="product-details.html">Product Details</a></li>
+            <li><a href="cart.html">Cart</a></li>
+            <li><a href="checkout.html">Checkout</a></li>
+            <li><a href="wishlist.html">Wishlist</a></li>
+            <li><a href="sign-up.html">Sign Up</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+    </li>
+
+    <li className="dropdown ">
+        <a href="javascript:void(0)">Blog</a>
+        <ul>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="blog-standard.html">Blog Standard</a></li>
+            <li><a href="blog-left-sidebar.html">Blog Left Sidebar</a></li>
+            <li><a href="blog-right-sidebar.html">Blog Right Sidebar</a></li>
+            <li><a href="blog-details.html">Blog Details</a></li>
+        </ul>
+    </li>
+
+    <li className=""><a href="contact.html">Contact</a></li>
+</ul>
+
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div className="main-header-one__bottom-right">
+                                            <div className="main-header-one__bottom-right-btn">
+                                                <a href="contact.html">Track Order
+                                                    <i className="icon-right-arrow21"></i>
+                                                </a>
+                                            </div>
+
+                                            <div className="login-box">
+                                                <a href="#"><i className="fa fa-sign-in"></i> <span>Member <br />
+                                                        Login</span> </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        
+
+
+    
+<div className="stricky-header stricky-header--style1 stricked-menu main-menu">
+    <div className="sticky-header__content"></div>
+</div>
+
+
+        
+        <section className="banner-one">
+            <div className="banner-one__pattern"
+                style={{ backgroundImage: "url(assets/images/pattern/banner-v1-pattern.png)" }}></div>
+            <div className="banner-one__pattern2"><img src="assets/images/pattern/banner-v1-pattern2.png" alt="#" /></div>
+
+            <div className="banner-one__img1"><img className="float-bob-x" src="assets/images/banner/banner-v1-img1.png"
+                    alt="#"></div>
+            <div className="banner-one__img5"><img className="float-bob-y" src="assets/images/banner/banner-v1-img5.png"
+                    alt="#"></div>
+            <div className="shape1 rotate-me"><img src="assets/images/shapes/banner-v1-shape1.png" alt="#" /></div>
+            <div className="container">
+                <div className="banner-one__location clearfix">
+
+                    
+                    <div className="banner-one__location-single style1">
+                        <div className="round-box">
+                            <div className="bdr"></div>
+                        </div>
+                        <div className="content-box">
+                            <div className="img-box">
+                                <img src="assets/images/banner/banner-v1-flag1.png" alt="" />
+                            </div>
+                            <div className="text-box">
+                                <h4>London</h4>
+                                <p>Logistic service <br /> provider </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                    
+                    <div className="banner-one__location-single style2">
+                        <div className="round-box">
+                            <div className="bdr"></div>
+                        </div>
+                        <div className="content-box">
+                            <div className="img-box">
+                                <img src="assets/images/banner/banner-v1-flag1.png" alt="" />
+                            </div>
+                            <div className="text-box">
+                                <h4>Alexander City</h4>
+                                <p>Logistic service <br /> provider </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                    
+                    <div className="banner-one__location-single style3">
+                        <div className="round-box">
+                            <div className="bdr"></div>
+                        </div>
+                        <div className="content-box">
+                            <div className="img-box">
+                                <img src="assets/images/banner/banner-v1-flag1.png" alt="" />
+                            </div>
+                            <div className="text-box">
+                                <h4>Birmingham</h4>
+                                <p>Logistic service <br /> provider </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                    
+                    <div className="banner-one__location-single style4">
+                        <div className="round-box">
+                            <div className="bdr"></div>
+                        </div>
+                        <div className="content-box">
+                            <div className="img-box">
+                                <img src="assets/images/banner/banner-v1-flag1.png" alt="" />
+                            </div>
+                            <div className="text-box">
+                                <h4>Guntersville</h4>
+                                <p>Logistic service <br /> provider </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                    
+                    <div className="banner-one__location-single style5">
+                        <div className="round-box">
+                            <div className="bdr"></div>
+                        </div>
+                        <div className="content-box">
+                            <div className="img-box">
+                                <img src="assets/images/banner/banner-v1-flag1.png" alt="" />
+                            </div>
+                            <div className="text-box">
+                                <h4>Montgomery</h4>
+                                <p>Logistic service <br /> provider </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                    
+                    <div className="banner-one__location-single style6">
+                        <div className="round-box">
+                            <div className="bdr"></div>
+                        </div>
+
+                        <div className="content-box">
+                            <div className="img-box">
+                                <img src="assets/images/banner/banner-v1-flag1.png" alt="" />
+                            </div>
+                            <div className="text-box">
+                                <h4>California</h4>
+                                <p>Logistic service <br /> provider </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                    
+                    <div className="banner-one__location-single style7">
+                        <div className="round-box">
+                            <div className="bdr"></div>
+                        </div>
+                        <div className="content-box">
+                            <div className="img-box">
+                                <img src="assets/images/banner/banner-v1-flag1.png" alt="" />
+                            </div>
+                            <div className="text-box">
+                                <h4>Colorado</h4>
+                                <p>Logistic service <br /> provider </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                    
+                    <div className="banner-one__location-single style8">
+                        <div className="round-box">
+                            <div className="bdr"></div>
+                        </div>
+                        <div className="content-box">
+                            <div className="img-box">
+                                <img src="assets/images/banner/banner-v1-flag1.png" alt="" />
+                            </div>
+                            <div className="text-box">
+                                <h4>Berlin</h4>
+                                <p>Logistic service <br /> provider </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+
+                <div className="banner-one__content">
+                    <div className="banner-one__content-left wow fadeInLeft" data-wow-delay="0ms"
+                        data-wow-duration="1500ms">
+                        <h2>Modern Logistic <br />
+                            <span>Transport</span></h2>
+                        <p>Specialist In Modern <br /> Transportation </p>
+                    </div>
+
+                    <div className="banner-one__content-right wow fadeInRight" data-wow-delay="0ms"
+                        data-wow-duration="1500ms">
+                        <div className="banner-one__content-right-text">
+                            <p>Logistic service provider company plays a pivotal role <br />
+                                in the global supply chain ecosystem managing.</p>
+                        </div>
+
+                        <div className="banner-one__content-right-middle">
+                            <ul className="clearfix">
+                                <li>
+                                    <div className="img-box"><img src="assets/images/banner/banner-v1-img2.jpg" alt="#" />
+                                    </div>
+                                </li>
+                                <li>
+                                    <div className="img-box"><img src="assets/images/banner/banner-v1-img3.jpg" alt="#" />
+                                    </div>
+                                </li>
+                                <li>
+                                    <div className="img-box"><img src="assets/images/banner/banner-v1-img4.jpg" alt="#" />
+                                    </div>
+                                </li>
+                            </ul>
+
+                            <div className="text-box">
+                                <h2>Customer Satisfied</h2>
+                                <p>4.8 (15k Reviews)</p>
+                            </div>
+                        </div>
+
+                        <div className="banner-one__content-right-btn">
+                            <a className="thm-btn" href="about.html">About Us
+                                <i className="icon-right-arrow21"></i>
+                                <span className="hover-btn hover-bx"></span>
+                                <span className="hover-btn hover-bx2"></span>
+                                <span className="hover-btn hover-bx3"></span>
+                                <span className="hover-btn hover-bx4"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+
+         
+         <section className="about-one">
+            <div className="container">
+                <div className="row">
+                    
+                    <div className="col-xl-7">
+                        <div className="about-one__content">
+                            <div className="sec-title tg-heading-subheading animation-style2">
+                                <div className="sec-title__tagline">
+                                    <div className="line"></div>
+                                    <div className="text tg-element-title">
+                                        <h4>Our Company</h4>
+                                    </div>
+                                    <div className="icon">
+                                        <span className="icon-plane2 float-bob-x3"></span>
+                                    </div>
+                                </div>
+                                <h2 className="sec-title__title tg-element-title">Our Expertise Stands in <br />
+                                    <span>Logistics
+                                        Solutions</span>
+                                </h2>
+                            </div>
+
+                            <div className="about-one__content-text1">
+                                <p>Logistic service provider company plays a pivotal role in the global supply
+                                    chain ecosystem by efficiently managing the movement of goods from origin to final
+                                    destination. These companies offer a diverse.</p>
+                            </div>
+
+                            <div className="about-one__content-text2">
+                                <div className="row">
+                                    <div className="col-xl-6 col-lg-6 col-md-6">
+                                        <div className="about-one__content-text2-single">
+                                            <div className="about-one__content-text2-single-top">
+                                                <div className="icon">
+                                                    <span className="icon-worldwide-shipping-1"></span>
+                                                </div>
+
+                                                <div className="title-box">
+                                                    <h3>Worldwide Service</h3>
+                                                </div>
+                                            </div>
+
+                                            <p>Logistic service provider company plays a pivotal role in the global</p>
+                                        </div>
+                                    </div>
+
+                                    <div className="col-xl-6 col-lg-6 col-md-6">
+                                        <div className="about-one__content-text2-single">
+                                            <div className="about-one__content-text2-single-top">
+                                                <div className="icon">
+                                                    <span className="icon-24-hours-service"></span>
+                                                </div>
+
+                                                <div className="title-box">
+                                                    <h3>24/7 Online Support</h3>
+                                                </div>
+                                            </div>
+
+                                            <p>Logistic service provider company plays a pivotal role in the global</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className="about-one__content-bottom">
+                                <div className="btn-box">
+                                    <a className="thm-btn" href="about.html">More About Us
+                                        <i className="icon-right-arrow21"></i>
+                                        <span className="hover-btn hover-bx"></span>
+                                        <span className="hover-btn hover-bx2"></span>
+                                        <span className="hover-btn hover-bx3"></span>
+                                        <span className="hover-btn hover-bx4"></span>
+                                    </a>
+                                </div>
+
+                                <div className="contact-box">
+                                    <div className="icon">
+                                        <span className="icon-phone2"></span>
+                                    </div>
+
+                                    <div className="text-box">
+                                        <p>Make A Phone Call</p>
+                                        <h4><a href="tel:1234567890">+880 123 456 789 </a></h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                    
+                    <div className="col-xl-5">
+                        <div className="about-one__img">
+                            <div className="shape1 float-bob-y"><img src="assets/images/shapes/about-v1-shape1.png" alt="" />
+                            </div>
+                            <div className="shape2 float-bob-y"><img src="assets/images/shapes/about-v1-shape2.png" alt="" />
+                            </div>
+                            <div className="about-one__img1 reveal">
+                                <img src="assets/images/about/about-v1-img1.jpg" alt="" />
+                            </div>
+
+                            <div className="about-one__img2">
+                                <div className="about-one__img2-inner reveal">
+                                    <img src="assets/images/about/about-v1-img2.jpg" alt="" />
+                                </div>
+
+                                <div className="about-one__circle-text">
+                                    <div className="about-one__round-text-box">
+                                        <div className="inner">
+                                            <div className="about-one__curved-circle rotate-me">
+                                                WELCOME TO OUR COMPANY SINCE 2002
+                                            </div>
+                                        </div>
+                                        <div className="overlay-icon-box">
+                                            <a href="#"><i className="icon-location1"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="shape3 float-bob-y">
+                                    <img src="assets/images/shapes/about-v1-shape3.png" alt="" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+        
+
+        
+        <section className="service-one">
+            <div className="service-one__pattern"
+                style={{ backgroundImage: "url(assets/images/pattern/service-v1-pattern.jpg)" }}></div>
+            <div className="container">
+                <div className="sec-title center text-center tg-heading-subheading animation-style2">
+                    <div className="sec-title__tagline">
+                        <div className="line"></div>
+                        <div className="text tg-element-title">
+                            <h4>Our Service</h4>
+                        </div>
+                        <div className="icon">
+                            <span className="icon-plane2 float-bob-x3"></span>
+                        </div>
+                    </div>
+                    <h2 className="sec-title__title tg-element-title">Provide Efficient Logistics
+                        <br /> Solutions <span>Business</span></h2>
+                </div>
+
+                <div className="row">
+                    <div className="service-one__carousel owl-carousel owl-theme owl-dot-style1">
+
+                        
+                        <div className="service-one__single">
+                            <div className="service-one__single-inner">
+                                <div className="service-one__single-img">
+                                    <img src="assets/images/services/services-v1-img1.jpg" alt="#" />
+                                </div>
+
+                                <div className="service-one__single-content">
+                                    <h2><a href="international-transport.html">International Shipping</a></h2>
+                                    <p>A logistic service provider company plays
+                                        a pivotal role in the global supply chain logistic service.</p>
+                                    <div className="btn-box">
+                                        <a href="international-transport.html">Read More <span
+                                                className="icon-right-arrow21"></span></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className="icon">
+                                <span className="icon-delivery-man"></span>
+                            </div>
+                        </div>
+                        
+                        
+                        <div className="service-one__single">
+                            <div className="service-one__single-inner">
+                                <div className="service-one__single-img">
+                                    <img src="assets/images/services/services-v1-img2.jpg" alt="#" />
+                                </div>
+
+                                <div className="service-one__single-content">
+                                    <h2><a href="international-transport.html">Ocean Freight</a></h2>
+                                    <p>A logistic service provider company plays
+                                        a pivotal role in the global supply chain logistic service.</p>
+                                    <div className="btn-box">
+                                        <a href="international-transport.html">Read More <span
+                                                className="icon-right-arrow21"></span></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className="icon">
+                                <span className="icon-shipment"></span>
+                            </div>
+                        </div>
+                        
+                        
+                        <div className="service-one__single">
+                            <div className="service-one__single-inner">
+                                <div className="service-one__single-img">
+                                    <img src="assets/images/services/services-v1-img3.jpg" alt="#" />
+                                </div>
+
+                                <div className="service-one__single-content">
+                                    <h2><a href="international-transport.html">Rail Freight</a></h2>
+                                    <p>
+                                        A logistic service provider company plays
+                                        a pivotal role in the global supply chain logistic service.
+                                    </p>
+                                    <div className="btn-box">
+                                        <a href="international-transport.html">Read More <span
+                                                className="icon-right-arrow21"></span></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className="icon">
+                                <span className="icon-international-shipping"></span>
+                            </div>
+                        </div>
+                        
+
+                        
+                        <div className="service-one__single">
+                            <div className="service-one__single-inner">
+                                <div className="service-one__single-img">
+                                    <img src="assets/images/services/services-v1-img1.jpg" alt="#" />
+                                </div>
+
+                                <div className="service-one__single-content">
+                                    <h2><a href="international-transport.html">International Shipping</a></h2>
+                                    <p>A logistic service provider company plays
+                                        a pivotal role in the global supply chain logistic service.</p>
+                                    <div className="btn-box">
+                                        <a href="international-transport.html">Read More <span
+                                                className="icon-right-arrow21"></span></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className="icon">
+                                <span className="icon-delivery-man"></span>
+                            </div>
+                        </div>
+                        
+                        
+                        <div className="service-one__single">
+                            <div className="service-one__single-inner">
+                                <div className="service-one__single-img">
+                                    <img src="assets/images/services/services-v1-img2.jpg" alt="#" />
+                                </div>
+
+                                <div className="service-one__single-content">
+                                    <h2><a href="international-transport.html">Ocean Freight</a></h2>
+                                    <p>A logistic service provider company plays
+                                        a pivotal role in the global supply chain logistic service.</p>
+                                    <div className="btn-box">
+                                        <a href="international-transport.html">Read More <span
+                                                className="icon-right-arrow21"></span></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className="icon">
+                                <span className="icon-shipment"></span>
+                            </div>
+                        </div>
+                        
+                        
+                        <div className="service-one__single">
+                            <div className="service-one__single-inner">
+                                <div className="service-one__single-img">
+                                    <img src="assets/images/services/services-v1-img3.jpg" alt="#" />
+                                </div>
+
+                                <div className="service-one__single-content">
+                                    <h2><a href="international-transport.html">Rail Freight</a></h2>
+                                    <p>
+                                        A logistic service provider company plays
+                                        a pivotal role in the global supply chain logistic service.
+                                    </p>
+                                    <div className="btn-box">
+                                        <a href="international-transport.html">Read More <span
+                                                className="icon-right-arrow21"></span></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className="icon">
+                                <span className="icon-international-shipping"></span>
+                            </div>
+                        </div>
+                        
+
+                        
+                        <div className="service-one__single">
+                            <div className="service-one__single-inner">
+                                <div className="service-one__single-img">
+                                    <img src="assets/images/services/services-v1-img1.jpg" alt="#" />
+                                </div>
+
+                                <div className="service-one__single-content">
+                                    <h2><a href="international-transport.html">International Shipping</a></h2>
+                                    <p>A logistic service provider company plays
+                                        a pivotal role in the global supply chain logistic service.</p>
+                                    <div className="btn-box">
+                                        <a href="international-transport.html">Read More <span
+                                                className="icon-right-arrow21"></span></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className="icon">
+                                <span className="icon-delivery-man"></span>
+                            </div>
+                        </div>
+                        
+                        
+                        <div className="service-one__single">
+                            <div className="service-one__single-inner">
+                                <div className="service-one__single-img">
+                                    <img src="assets/images/services/services-v1-img2.jpg" alt="#" />
+                                </div>
+
+                                <div className="service-one__single-content">
+                                    <h2><a href="international-transport.html">Ocean Freight</a></h2>
+                                    <p>A logistic service provider company plays
+                                        a pivotal role in the global supply chain logistic service.</p>
+                                    <div className="btn-box">
+                                        <a href="international-transport.html">Read More <span
+                                                className="icon-right-arrow21"></span></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className="icon">
+                                <span className="icon-shipment"></span>
+                            </div>
+                        </div>
+                        
+                        
+                        <div className="service-one__single">
+                            <div className="service-one__single-inner">
+                                <div className="service-one__single-img">
+                                    <img src="assets/images/services/services-v1-img3.jpg" alt="#" />
+                                </div>
+
+                                <div className="service-one__single-content">
+                                    <h2><a href="international-transport.html">Rail Freight</a></h2>
+                                    <p>
+                                        A logistic service provider company plays
+                                        a pivotal role in the global supply chain logistic service.
+                                    </p>
+                                    <div className="btn-box">
+                                        <a href="international-transport.html">Read More <span
+                                                className="icon-right-arrow21"></span></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className="icon">
+                                <span className="icon-international-shipping"></span>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+
+        
+        <section className="project-one">
+            <div className="container">
+                <div className="row">
+                    
+                    <div className="col-xl-5 col-lg-5 wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+                        <div className="project-one__title">
+                            <div className="sec-title tg-heading-subheading animation-style2">
+                                <div className="sec-title__tagline">
+                                    <div className="line"></div>
+                                    <div className="text tg-element-title">
+                                        <h4>Latest Project</h4>
+                                    </div>
+                                    <div className="icon">
+                                        <span className="icon-plane2 float-bob-x3"></span>
+                                    </div>
+                                </div>
+                                <h2 className="sec-title__title tg-element-title">The Achievement <br />
+                                    of Our <span>Project</span></h2>
+                            </div>
+
+                            <div className="btn-box">
+                                <a className="thm-btn" href="project.html">See All Project
+                                    <i className="icon-right-arrow21"></i>
+                                    <span className="hover-btn hover-bx"></span>
+                                    <span className="hover-btn hover-bx2"></span>
+                                    <span className="hover-btn hover-bx3"></span>
+                                    <span className="hover-btn hover-bx4"></span>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                    
+
+                    
+                    <div className="col-xl-7 col-lg-7 wow fadeInRight" data-wow-delay="0ms" data-wow-duration="1500ms">
+                        <div className="project-one__single">
+                            <div className="project-one__single-img">
+                                <div className="inner">
+                                    <img src="assets/images/project/project-v1-img1.jpg" alt="#" />
+                                    <div className="project-one__overlay-content">
+                                        <div className="text-box">
+                                            <p>Logistic</p>
+                                            <h2><a href="project-details.html">Warehouse Inventory </a></h2>
+                                        </div>
+
+                                        <div className="icon">
+                                            <a href="project-details.html"><span className="icon-right-arrow21"></span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                    
+                    <div className="col-xl-4 col-lg-4 wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+                        <div className="project-one__single">
+                            <div className="project-one__single-img">
+                                <div className="inner">
+                                    <img src="assets/images/project/project-v1-img2.jpg" alt="#" />
+                                    <div className="project-one__overlay-content">
+                                        <div className="text-box">
+                                            <p>Logistic</p>
+                                            <h2><a href="project-details.html">Warehouse Inventory </a></h2>
+                                        </div>
+
+                                        <div className="icon">
+                                            <a href="project-details.html"><span className="icon-right-arrow21"></span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                    
+                    <div className="col-xl-4 col-lg-4 wow fadeInRight" data-wow-delay="0ms" data-wow-duration="1500ms">
+                        <div className="project-one__single">
+                            <div className="project-one__single-img">
+                                <div className="inner">
+                                    <img src="assets/images/project/project-v1-img3.jpg" alt="#" />
+                                    <div className="project-one__overlay-content">
+                                        <div className="text-box">
+                                            <p>Logistic</p>
+                                            <h2><a href="project-details.html">Warehouse Inventory </a></h2>
+                                        </div>
+
+                                        <div className="icon">
+                                            <a href="project-details.html"><span className="icon-right-arrow21"></span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                    
+                    <div className="col-xl-4 col-lg-4 wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+                        <div className="project-one__single">
+                            <div className="project-one__single-img">
+                                <div className="inner">
+                                    <img src="assets/images/project/project-v1-img4.jpg" alt="#" />
+                                    <div className="project-one__overlay-content">
+                                        <div className="text-box">
+                                            <p>Logistic</p>
+                                            <h2><a href="project-details.html">Warehouse Inventory </a></h2>
+                                        </div>
+
+                                        <div className="icon">
+                                            <a href="project-details.html"><span className="icon-right-arrow21"></span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+        
+
+        
+        <section className="why-choose-one">
+            <div className="why-choose-one__pattern">
+                <img src="assets/images/pattern/why-choose-v1-pattern.png" alt="" />
+            </div>
+            <div className="shape1 float-bob-y"><img src="assets/images/shapes/why-choose-v1-shape1.png" alt="" /></div>
+            <div className="container">
+                <div className="row">
+                    
+                    <div className="col-xl-6">
+                        <div className="why-choose-one__content">
+                            <div className="sec-title tg-heading-subheading animation-style2">
+                                <div className="sec-title__tagline">
+                                    <div className="line"></div>
+                                    <div className="text tg-element-title">
+                                        <h4>Why Choose us</h4>
+                                    </div>
+                                    <div className="icon">
+                                        <span className="icon-plane2 float-bob-x3"></span>
+                                    </div>
+                                </div>
+                                <h2 className="sec-title__title tg-element-title">Efficient, Safe, & Swift <br /> Logistics
+                                    <span>Solution!</span></h2>
+                            </div>
+
+                            <div className="why-choose-one__content-list">
+                                <ul>
+                                    <li>
+                                        <p><span className="icon-plane2"></span> Make long term business decisions</p>
+                                    </li>
+                                    <li>
+                                        <p><span className="icon-plane2"></span> Transparent career journey and support.</p>
+                                    </li>
+                                    <li>
+                                        <p><span className="icon-plane2"></span> Be a responsible member of the community
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p><span className="icon-plane2"></span> Provide a service we are proud of</p>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div className="btn-box">
+                                <a className="thm-btn" href="contact.html">Contact Us
+                                    <i className="icon-right-arrow21"></i>
+                                    <span className="hover-btn hover-bx"></span>
+                                    <span className="hover-btn hover-bx2"></span>
+                                    <span className="hover-btn hover-bx3"></span>
+                                    <span className="hover-btn hover-bx4"></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                    
+                    <div className="col-xl-6">
+                        <div className="why-choose-one__form-box wow fadeInRight" data-wow-delay="0ms"
+                            data-wow-duration="1500ms">
+                            <div className="title-box">
+                                <h2>Request a Quote</h2>
+                            </div>
+
+                            <form className="contact-form-validated why-choose-one__form" action="https://logistiq-laravel.mnsithub.com/assets/inc/sendemail.php"
+                                method="post" novalidate="novalidate">
+                                <div className="row">
+                                    <div className="col-xl-6 col-lg-6 col-md-6">
+                                        <div className="input-box">
+                                            <input type="text" name="name" placeholder="Name" required="" />
+                                            <div className="icon"><span className="icon-user"></span></div>
+                                        </div>
+                                    </div>
+                                    <div className="col-xl-6 col-lg-6 col-md-6">
+                                        <div className="input-box">
+                                            <input type="email" name="email" placeholder="Email" required="" />
+                                            <div className="icon"><span className="icon-email"></span></div>
+                                        </div>
+                                    </div>
+
+                                    <div className="col-xl-6 col-lg-6 col-md-6">
+                                        <div className="input-box">
+                                            <input type="text" name="Phone" placeholder="Phone" required="" />
+                                            <div className="icon"><span className="icon-phone2"></span></div>
+                                        </div>
+                                    </div>
+                                    <div className="col-xl-6 col-lg-6 col-md-6">
+                                        <div className="input-box">
+                                            <input type="text" name="date" value="" placeholder="Date" id="datepicker" />
+                                            <div className="icon"><span className="icon-calendar"></span></div>
+                                        </div>
+                                    </div>
+
+
+                                    <div className="col-xl-12">
+                                        <div className="why-choose-one__form-distance">
+                                            <div className="title">
+                                                <p>distance(Kilo):</p>
+                                            </div>
+                                            <div className="why-choose-one__form-distance-inner">
+                                                <div className="price-ranger">
+                                                    <div id="slider-range"></div>
+                                                    <div className="ranger-min-max-block">
+                                                        <input type="text" readonly className="min" />
+                                                        <span>-</span>
+                                                        <input type="text" readonly className="max" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div className="col-xl-6 col-lg-6 col-md-6">
+                                        <div className="input-box">
+                                            <div className="select-box">
+                                                <select className="selectmenu wide">
+                                                    <option selected="selected">Freight Type</option>
+                                                    <option>Freight Type 01</option>
+                                                    <option>Freight Type 02</option>
+                                                    <option>Freight Type 03</option>
+                                                    <option>Freight Type 04</option>
+                                                    <option>Freight Type 05</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="col-xl-6 col-lg-6 col-md-6">
+                                        <div className="input-box">
+                                            <div className="select-box">
+                                                <select className="selectmenu wide">
+                                                    <option selected="selected">Load</option>
+                                                    <option>Freight Type 01</option>
+                                                    <option>Freight Type 02</option>
+                                                    <option>Freight Type 03</option>
+                                                    <option>Freight Type 04</option>
+                                                    <option>Freight Type 05</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div className="col-xl-12">
+                                        <div className="why-choose-one__form-btn">
+                                            <button type="submit" className="thm-btn">
+                                                Contact Us
+                                                <i className="icon-right-arrow21"></i>
+                                                <span className="hover-btn hover-bx"></span>
+                                                <span className="hover-btn hover-bx2"></span>
+                                                <span className="hover-btn hover-bx3"></span>
+                                                <span className="hover-btn hover-bx4"></span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                            <div className="result"></div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+        
+
+        
+        <section className="skill-one">
+            <div className="container">
+                <div className="row">
+                    
+                    <div className="col-xl-5">
+                        <div className="skill-one__img">
+                            <div className="shape1 float-bob-y"><img src="assets/images/shapes/skill-v1-shape1.png" alt="" />
+                            </div>
+                            <div className="shape2 float-bob-y"><img src="assets/images/shapes/skill-v1-shape2.png" alt="" />
+                            </div>
+                            <div className="skill-one__img1 wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+                                <img src="assets/images/resources/skill-v1-img1.jpg" alt="" />
+                            </div>
+                            <div className="skill-one__img2 wow fadeInRight" data-wow-delay="0ms"
+                                data-wow-duration="1500ms">
+                                <div className="inner">
+                                    <img src="assets/images/resources/skill-v1-img2.jpg" alt="" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                    
+                    <div className="col-xl-7">
+                        <div className="skill-one__content">
+                            <div className="sec-title tg-heading-subheading animation-style2">
+                                <div className="sec-title__tagline">
+                                    <div className="line"></div>
+                                    <div className="text tg-element-title">
+                                        <h4>Our Skills</h4>
+                                    </div>
+                                    <div className="icon">
+                                        <span className="icon-plane2 float-bob-x3"></span>
+                                    </div>
+                                </div>
+                                <h2 className="sec-title__title tg-element-title">Transportation Services <br /> We Are Often
+                                    <span>Considered</span> </h2>
+                            </div>
+
+                            <div className="skill-one__content-text">
+                                <p>A logistic service provider company plays a pivotal role in the global supply chain
+                                    ecosystem by efficiently managing the movement of goods from point of origin to
+                                    final destination. These companies offer a diverse range.</p>
+                            </div>
+
+                            <ul className="skill-one__progress">
+                                <li>
+                                    <div className="skill-one__progress-single">
+                                        <div className="title-box">
+                                            <p>Shipping</p>
+                                        </div>
+
+                                        <div className="bar">
+                                            <div className="bar-inner count-bar" data-percent="85%">
+                                                <div className="count-text">85%</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <div className="skill-one__progress-single">
+                                        <div className="title-box">
+                                            <p>Management</p>
+                                        </div>
+
+                                        <div className="bar">
+                                            <div className="bar-inner count-bar" data-percent="90%">
+                                                <div className="count-text">90%</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <div className="skill-one__progress-single">
+                                        <div className="title-box">
+                                            <p>Warehousing</p>
+                                        </div>
+
+                                        <div className="bar">
+                                            <div className="bar-inner count-bar" data-percent="70%">
+                                                <div className="count-text">70%</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+
+                            <div className="skill-one__content-btn">
+                                <a className="thm-btn" href="about.html">Book Your Parcel
+                                    <i className="icon-right-arrow21"></i>
+                                    <span className="hover-btn hover-bx"></span>
+                                    <span className="hover-btn hover-bx2"></span>
+                                    <span className="hover-btn hover-bx3"></span>
+                                    <span className="hover-btn hover-bx4"></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+        
+
+        
+        <section className="testimonial-one">
+            <div className="testimonial-one__pattern"
+                style={{ backgroundImage: "url(assets/images/pattern/testimonial-v1-pattern.png)" }}></div>
+            <div className="container">
+                <div className="row">
+                    
+                    <div className="col-xl-6">
+                        <div className="testimonial-one__content">
+                            <div className="big-title wow slideInLeft" data-wow-delay="100ms" data-wow-duration="2500ms">
+                                <h2>TESTIMONIALS</h2>
+                            </div>
+                            <div className="sec-title tg-heading-subheading animation-style2">
+                                <div className="sec-title__tagline">
+                                    <div className="line"></div>
+                                    <div className="text tg-element-title">
+                                        <h4>Client Testimonial</h4>
+                                    </div>
+                                    <div className="icon">
+                                        <span className="icon-plane2 float-bob-x3"></span>
+                                    </div>
+                                </div>
+                                <h2 className="sec-title__title tg-element-title">What Our Customers <br />
+                                    Say <span>About Us</span> </h2>
+                            </div>
+
+                            <div className="testimonial-one__carousel owl-carousel owl-theme">
+                                
+                                <div className="testimonial-one__single">
+                                    <div className="icon">
+                                        <span className="icon-quote1"></span>
+                                    </div>
+                                    <div className="testimonial-one__single-inner">
+                                        <div className="shape1"><img src="assets/images/shapes/testimonial-v1-shape1.png"
+                                                alt=""></div>
+                                        <div className="author-box">
+                                            <div className="img-box">
+                                                <img src="assets/images/testimonial/testimonial-v1-img1.png" alt="" />
+                                            </div>
+                                            <div className="author-info">
+                                                <h2>Ronald Richards</h2>
+                                                <div className="bottom-text">
+                                                    <p>MANAGER</p>
+                                                    <div className="rating-box">
+                                                        <i className="icon-star"></i>
+                                                        <i className="icon-star"></i>
+                                                        <i className="icon-star"></i>
+                                                        <i className="icon-star"></i>
+                                                        <i className="icon-star"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div className="text-box">
+                                            <p>A logistic service provider company plays a pivotal role in the global
+                                                supply chain A logistic service provider companyA logistic service
+                                                provider company plays a pivotal role in the global supply chain A
+                                                logistic service provider company</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+
+                                
+                                <div className="testimonial-one__single">
+                                    <div className="icon">
+                                        <span className="icon-quote1"></span>
+                                    </div>
+                                    <div className="testimonial-one__single-inner">
+                                        <div className="shape1"><img src="assets/images/shapes/testimonial-v1-shape1.png"
+                                                alt=""></div>
+                                        <div className="author-box">
+                                            <div className="img-box">
+                                                <img src="assets/images/testimonial/testimonial-v1-img1.png" alt="" />
+                                            </div>
+                                            <div className="author-info">
+                                                <h2>Ronald Richards</h2>
+                                                <div className="bottom-text">
+                                                    <p>MANAGER</p>
+                                                    <div className="rating-box">
+                                                        <i className="icon-star"></i>
+                                                        <i className="icon-star"></i>
+                                                        <i className="icon-star"></i>
+                                                        <i className="icon-star"></i>
+                                                        <i className="icon-star"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div className="text-box">
+                                            <p>A logistic service provider company plays a pivotal role in the global
+                                                supply chain A logistic service provider companyA logistic service
+                                                provider company plays a pivotal role in the global supply chain A
+                                                logistic service provider company</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+
+                                
+                                <div className="testimonial-one__single">
+                                    <div className="icon">
+                                        <span className="icon-quote1"></span>
+                                    </div>
+                                    <div className="testimonial-one__single-inner">
+                                        <div className="shape1"><img src="assets/images/shapes/testimonial-v1-shape1.png"
+                                                alt=""></div>
+                                        <div className="author-box">
+                                            <div className="img-box">
+                                                <img src="assets/images/testimonial/testimonial-v1-img1.png" alt="" />
+                                            </div>
+                                            <div className="author-info">
+                                                <h2>Ronald Richards</h2>
+                                                <div className="bottom-text">
+                                                    <p>MANAGER</p>
+                                                    <div className="rating-box">
+                                                        <i className="icon-star"></i>
+                                                        <i className="icon-star"></i>
+                                                        <i className="icon-star"></i>
+                                                        <i className="icon-star"></i>
+                                                        <i className="icon-star"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div className="text-box">
+                                            <p>A logistic service provider company plays a pivotal role in the global
+                                                supply chain A logistic service provider companyA logistic service
+                                                provider company plays a pivotal role in the global supply chain A
+                                                logistic service provider company</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+
+
+                    
+                    <div className="col-xl-6">
+                        <div className="testimonial-one__img">
+                            <div className="testimonial-one__img1 reveal">
+                                <img src="assets/images/testimonial/testimonial-v1-img2.jpg" alt="" />
+                            </div>
+
+                            <div className="testimonial-one__img-author">
+                                <ul>
+                                    <li>
+                                        <div className="img-box"><img src="assets/images/banner/banner-v1-img2.jpg" alt="#" />
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div className="img-box"><img src="assets/images/banner/banner-v1-img3.jpg" alt="#" />
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div className="img-box"><img src="assets/images/banner/banner-v1-img4.jpg" alt="#" />
+                                        </div>
+                                    </li>
+                                </ul>
+
+                                <div className="text-box">
+                                    <h2>Customer Satisfied</h2>
+                                    <p>4.8 (15k Reviews)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+        
+
+        
+        <section className="faq-one">
+            <div className="shape1 float-bob-x"><img src="assets/images/shapes/faq-v1-shape1.png" alt="" /></div>
+            <div className="container">
+                <div className="row">
+                    
+                    <div className="col-xl-6">
+                        <div className="faq-one__content">
+                            <div className="faq-one__content-faq">
+                                <div className="sec-title tg-heading-subheading animation-style2">
+                                    <div className="sec-title__tagline">
+                                        <div className="line"></div>
+                                        <div className="text tg-element-title">
+                                            <h4>Company's FAQ</h4>
+                                        </div>
+                                        <div className="icon">
+                                            <span className="icon-plane2 float-bob-x3"></span>
+                                        </div>
+                                    </div>
+                                    <h2 className="sec-title__title tg-element-title">Frequently Asked Have <br />
+                                        Any <span>Question?</span> </h2>
+                                </div>
+
+                                <div className="accrodion-grp faq-one-accrodion" data-grp-name="faq-one-accrodion-1">
+                                    <div className="accrodion">
+                                        <div className="accrodion-title">
+                                            <h4>How do you handle returns or exchanges?</h4>
+                                        </div>
+
+                                        <div className="accrodion-content">
+                                            <div className="inner">
+                                                <p>We help businesses bring ideas to life in the digital world designing
+                                                    & implementing the technology tools that they need to win. We help
+                                                    business bring ideas to life in the digital wor</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div className="accrodion active">
+                                        <div className="accrodion-title">
+                                            <h4>What does business consulting do?</h4>
+                                        </div>
+
+                                        <div className="accrodion-content">
+                                            <div className="inner">
+                                                <p>We help businesses bring ideas to life in the digital world designing
+                                                    & implementing the technology tools that they need to win. We help
+                                                    business bring ideas to life in the digital wor</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div className="accrodion">
+                                        <div className="accrodion-title">
+                                            <h4>Can I cancel a shipment after it's been booked?</h4>
+                                        </div>
+
+                                        <div className="accrodion-content">
+                                            <div className="inner">
+                                                <p>We help businesses bring ideas to life in the digital world designing
+                                                    & implementing the technology tools that they need to win. We help
+                                                    business bring ideas to life in the digital wor</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div className="accrodion">
+                                        <div className="accrodion-title">
+                                            <h4>Can you assist with customs clearance procedures?</h4>
+                                        </div>
+
+                                        <div className="accrodion-content">
+                                            <div className="inner">
+                                                <p>We help businesses bring ideas to life in the digital world designing
+                                                    & implementing the technology tools that they need to win. We help
+                                                    business bring ideas to life in the digital wor</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                    
+                    <div className="col-xl-6">
+                        <div className="faq-one__img">
+                            <div className="faq-one__img-box">
+                                <img src="assets/images/resources/faq-v1-img1.jpg" alt="" />
+
+                                <div className="faq-one__video-link">
+                                    <a href="https://www.youtube.com/watch?v=Get7rqXYrbQ" className="video-popup">
+                                        <div className="faq-one__video-icon">
+                                            <span className="icon-video"></span>
+                                            <i className="ripple"></i>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+
+            
+            <div className="sliding-text-one">
+                <div className="sliding-text-one__wrap">
+                    <ul className="sliding-text__list list-unstyled marquee_mode">
+                        <li>
+                            <h2 data-hover="100% TRUSTED TRANSPORT" className="sliding-text__title">100% TRUSTED TRANSPORT
+                                <img src="assets/images/icon/sliding-text-icon-1.png" alt="" /></h2>
+                        </li>
+                        <li>
+                            <h2 data-hover="100% TRUSTED TRANSPORT" className="sliding-text__title">100% TRUSTED TRANSPORT
+                                <img src="assets/images/icon/sliding-text-icon-1.png" alt="" /></h2>
+                        </li>
+                        <li>
+                            <h2 data-hover="100% TRUSTED TRANSPORT" className="sliding-text__title">100% TRUSTED TRANSPORT
+                                <img src="assets/images/icon/sliding-text-icon-1.png" alt="" /></h2>
+                        </li>
+                        <li>
+                            <h2 data-hover="100% TRUSTED TRANSPORT" className="sliding-text__title">100% TRUSTED TRANSPORT
+                                <img src="assets/images/icon/sliding-text-icon-1.png" alt="" /></h2>
+                        </li>
+                        <li>
+                            <h2 data-hover="100% TRUSTED TRANSPORT" className="sliding-text__title">100% TRUSTED TRANSPORT
+                                <img src="assets/images/icon/sliding-text-icon-1.png" alt="" /></h2>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+        </section>
+        
+
+        
+        <section className="cta-one">
+            <div className="container">
+                <div className="cta-one__inner">
+                    <div className="cta-one__img wow fadeInRight" data-wow-delay="0ms" data-wow-duration="1500ms"><img
+                            src="assets/images/resources/cta-v1-img1.png" alt=""></div>
+                    <div className="cta-one__pattern"><img src="assets/images/pattern/cta-v1-pattern.png" alt="" /></div>
+                    <div className="shape1 float-bob-x"><img src="assets/images/shapes/cta-v1-shape1.png" alt="" /></div>
+                    <div className="shape2"><img src="assets/images/shapes/cta-v1-shape2.png" alt="" /></div>
+                    <div className="shape3"><img src="assets/images/shapes/cta-v1-shape3.png" alt="" /></div>
+                    <div className="cta-one__content">
+                        <h2>Recognized as One of The <br /> Leading <span>Company!</span></h2>
+                        <p>Logistic service provider company plays a pivotal <br />
+                            role in the global supply chain ecosystem.</p>
+                        <div className="btn-box">
+                            <a className="thm-btn" href="#">Book Your Parcel
+                                <i className="icon-right-arrow21"></i>
+                                <span className="hover-btn hover-bx"></span>
+                                <span className="hover-btn hover-bx2"></span>
+                                <span className="hover-btn hover-bx3"></span>
+                                <span className="hover-btn hover-bx4"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+
+        
+        <section className="counter-one">
+            <div className="container">
+                <div className="row">
+                    
+                    <div className="col-xl-4 col-lg-4 wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+                        <div className="counter-one__single">
+                            <div className="counter-one__single-inner">
+                                <div className="icon">
+                                    <span className="icon-box"></span>
+                                </div>
+
+                                <div className="content-box">
+                                    <div className="count-text-box count-box">
+                                        <h3 className="count-text" data-stop="541" data-speed="1500">00</h3>
+                                        <span className="plus">+</span>
+                                    </div>
+                                    <div className="text-box">
+                                        <p>Distribution Center</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="shape1"></div>
+                        </div>
+                    </div>
+                    
+
+                    
+                    <div className="col-xl-4 col-lg-4 wow fadeInRight" data-wow-delay="0ms" data-wow-duration="1500ms">
+                        <div className="counter-one__single">
+                            <div className="counter-one__single-inner">
+                                <div className="icon">
+                                    <span className="icon-location"></span>
+                                </div>
+
+                                <div className="content-box">
+                                    <div className="count-text-box count-box">
+                                        <h3 className="count-text" data-stop="766" data-speed="1500">00</h3>
+                                        <span className="plus">+</span>
+                                    </div>
+                                    <div className="text-box">
+                                        <p>Countries & Regions</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="shape1"></div>
+                        </div>
+                    </div>
+                    
+
+                    
+                    <div className="col-xl-4 col-lg-4 wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+                        <div className="counter-one__single">
+                            <div className="counter-one__single-inner">
+                                <div className="icon">
+                                    <span className="icon-customer-loyalty"></span>
+                                </div>
+
+                                <div className="content-box">
+                                    <div className="count-text-box count-box">
+                                        <h3 className="count-text" data-stop="25" data-speed="1500">00</h3>
+                                        <span className="plus">+</span>
+                                    </div>
+                                    <div className="text-box">
+                                        <p>Years Of Expirence</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="shape1"></div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+        
+
+        
+        <section className="team-one">
+            <div className="container">
+                <div className="sec-title center text-center tg-heading-subheading animation-style2">
+                    <div className="sec-title__tagline">
+                        <div className="line"></div>
+                        <div className="text tg-element-title">
+                            <h4>Team member</h4>
+                        </div>
+                        <div className="icon">
+                            <span className="icon-plane2 float-bob-x3"></span>
+                        </div>
+                    </div>
+                    <h2 className="sec-title__title tg-element-title">Introduce Our Expert <br />
+                        Logistic <span>Teams</span></h2>
+                </div>
+
+                <div className="team-one__carousel owl-carousel owl-theme owl-dot-style1">
+                    
+                    <div className="team-one__single">
+                        <div className="team-one__single-img">
+                            <div className="inner">
+                                <img src="assets/images/team/team-v1-img1.jpg" alt="" />
+                            </div>
+                        </div>
+
+                        <div className="team-one__single-content">
+                            <ul className="social-links">
+                                <li><a href="#"><span className="icon-linkedin"></span></a></li>
+                                <li><a href="#"><span className="icon-twitter1"></span></a></li>
+                                <li><a href="#"><span className="icon-instagram"></span></a></li>
+                                <li><a href="#"><span className="icon-facebook-f"></span></a></li>
+                            </ul>
+                            <span>FOUNDER</span>
+                            <h2><a href="team-details.html">Courtney Henry</a></h2>
+                            <p>Logistic service provider company plays a pivotal role in the global supply chain
+                            </p>
+                            <div className="btn-box">
+                                <a href="contact.html">Contact Me <i className="icon-right-arrow21"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                    
+                    <div className="team-one__single">
+                        <div className="team-one__single-img">
+                            <div className="inner">
+                                <img src="assets/images/team/team-v1-img2.jpg" alt="" />
+                            </div>
+                        </div>
+
+                        <div className="team-one__single-content">
+                            <ul className="social-links">
+                                <li><a href="#"><span className="icon-linkedin"></span></a></li>
+                                <li><a href="#"><span className="icon-twitter1"></span></a></li>
+                                <li><a href="#"><span className="icon-instagram"></span></a></li>
+                                <li><a href="#"><span className="icon-facebook-f"></span></a></li>
+                            </ul>
+                            <span>FOUNDER</span>
+                            <h2><a href="team-details.html">Jane Cooper</a></h2>
+                            <p>Logistic service provider company plays a pivotal role in the global supply chain
+                            </p>
+                            <div className="btn-box">
+                                <a href="contact.html">Contact Me <i className="icon-right-arrow21"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                    
+                    <div className="team-one__single">
+                        <div className="team-one__single-img">
+                            <div className="inner">
+                                <img src="assets/images/team/team-v1-img3.jpg" alt="" />
+                            </div>
+                        </div>
+
+                        <div className="team-one__single-content">
+                            <ul className="social-links">
+                                <li><a href="#"><span className="icon-linkedin"></span></a></li>
+                                <li><a href="#"><span className="icon-twitter1"></span></a></li>
+                                <li><a href="#"><span className="icon-instagram"></span></a></li>
+                                <li><a href="#"><span className="icon-facebook-f"></span></a></li>
+                            </ul>
+                            <span>FOUNDER</span>
+                            <h2><a href="team-details.html">Marvin McKinney</a></h2>
+                            <p>Logistic service provider company plays a pivotal role in the global supply chain
+                            </p>
+                            <div className="btn-box">
+                                <a href="contact.html">Contact Me <i className="icon-right-arrow21"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                    
+                    <div className="team-one__single">
+                        <div className="team-one__single-img">
+                            <div className="inner">
+                                <img src="assets/images/team/team-v1-img1.jpg" alt="" />
+                            </div>
+                        </div>
+
+                        <div className="team-one__single-content">
+                            <ul className="social-links">
+                                <li><a href="#"><span className="icon-linkedin"></span></a></li>
+                                <li><a href="#"><span className="icon-twitter1"></span></a></li>
+                                <li><a href="#"><span className="icon-instagram"></span></a></li>
+                                <li><a href="#"><span className="icon-facebook-f"></span></a></li>
+                            </ul>
+                            <span>FOUNDER</span>
+                            <h2><a href="team-details.html">Courtney Henry</a></h2>
+                            <p>Logistic service provider company plays a pivotal role in the global supply chain
+                            </p>
+                            <div className="btn-box">
+                                <a href="contact.html">Contact Me <i className="icon-right-arrow21"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                    
+                    <div className="team-one__single">
+                        <div className="team-one__single-img">
+                            <div className="inner">
+                                <img src="assets/images/team/team-v1-img2.jpg" alt="" />
+                            </div>
+                        </div>
+
+                        <div className="team-one__single-content">
+                            <ul className="social-links">
+                                <li><a href="#"><span className="icon-linkedin"></span></a></li>
+                                <li><a href="#"><span className="icon-twitter1"></span></a></li>
+                                <li><a href="#"><span className="icon-instagram"></span></a></li>
+                                <li><a href="#"><span className="icon-facebook-f"></span></a></li>
+                            </ul>
+                            <span>FOUNDER</span>
+                            <h2><a href="team-details.html">Jane Cooper</a></h2>
+                            <p>Logistic service provider company plays a pivotal role in the global supply chain
+                            </p>
+                            <div className="btn-box">
+                                <a href="contact.html">Contact Me <i className="icon-right-arrow21"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                    
+                    <div className="team-one__single">
+                        <div className="team-one__single-img">
+                            <div className="inner">
+                                <img src="assets/images/team/team-v1-img3.jpg" alt="" />
+                            </div>
+                        </div>
+
+                        <div className="team-one__single-content">
+                            <ul className="social-links">
+                                <li><a href="#"><span className="icon-linkedin"></span></a></li>
+                                <li><a href="#"><span className="icon-twitter1"></span></a></li>
+                                <li><a href="#"><span className="icon-instagram"></span></a></li>
+                                <li><a href="#"><span className="icon-facebook-f"></span></a></li>
+                            </ul>
+                            <span>FOUNDER</span>
+                            <h2><a href="team-details.html">Marvin McKinney</a></h2>
+                            <p>Logistic service provider company plays a pivotal role in the global supply chain
+                            </p>
+                            <div className="btn-box">
+                                <a href="contact.html">Contact Me <i className="icon-right-arrow21"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                    
+                    <div className="team-one__single">
+                        <div className="team-one__single-img">
+                            <div className="inner">
+                                <img src="assets/images/team/team-v1-img1.jpg" alt="" />
+                            </div>
+                        </div>
+
+                        <div className="team-one__single-content">
+                            <ul className="social-links">
+                                <li><a href="#"><span className="icon-linkedin"></span></a></li>
+                                <li><a href="#"><span className="icon-twitter1"></span></a></li>
+                                <li><a href="#"><span className="icon-instagram"></span></a></li>
+                                <li><a href="#"><span className="icon-facebook-f"></span></a></li>
+                            </ul>
+                            <span>FOUNDER</span>
+                            <h2><a href="team-details.html">Courtney Henry</a></h2>
+                            <p>Logistic service provider company plays a pivotal role in the global supply chain
+                            </p>
+                            <div className="btn-box">
+                                <a href="contact.html">Contact Me <i className="icon-right-arrow21"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                    
+                    <div className="team-one__single">
+                        <div className="team-one__single-img">
+                            <div className="inner">
+                                <img src="assets/images/team/team-v1-img2.jpg" alt="" />
+                            </div>
+                        </div>
+
+                        <div className="team-one__single-content">
+                            <ul className="social-links">
+                                <li><a href="#"><span className="icon-linkedin"></span></a></li>
+                                <li><a href="#"><span className="icon-twitter1"></span></a></li>
+                                <li><a href="#"><span className="icon-instagram"></span></a></li>
+                                <li><a href="#"><span className="icon-facebook-f"></span></a></li>
+                            </ul>
+                            <span>FOUNDER</span>
+                            <h2><a href="team-details.html">Jane Cooper</a></h2>
+                            <p>Logistic service provider company plays a pivotal role in the global supply chain
+                            </p>
+                            <div className="btn-box">
+                                <a href="contact.html">Contact Me <i className="icon-right-arrow21"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                    
+                    <div className="team-one__single">
+                        <div className="team-one__single-img">
+                            <div className="inner">
+                                <img src="assets/images/team/team-v1-img3.jpg" alt="" />
+                            </div>
+                        </div>
+
+                        <div className="team-one__single-content">
+                            <ul className="social-links">
+                                <li><a href="#"><span className="icon-linkedin"></span></a></li>
+                                <li><a href="#"><span className="icon-twitter1"></span></a></li>
+                                <li><a href="#"><span className="icon-instagram"></span></a></li>
+                                <li><a href="#"><span className="icon-facebook-f"></span></a></li>
+                            </ul>
+                            <span>FOUNDER</span>
+                            <h2><a href="team-details.html">Marvin McKinney</a></h2>
+                            <p>Logistic service provider company plays a pivotal role in the global supply chain
+                            </p>
+                            <div className="btn-box">
+                                <a href="contact.html">Contact Me <i className="icon-right-arrow21"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+        
+
+        
+        <section className="features-two">
+            <div className="features-two__top">
+                <div className="container">
+                    <div className="features-two__top-inner">
+                        <div className="sec-title tg-heading-subheading animation-style2">
+                            <div className="sec-title__tagline">
+                                <div className="line"></div>
+                                <div className="text tg-element-title">
+                                    <h4>Fleet Management</h4>
+                                </div>
+                                <div className="icon">
+                                    <span className="icon-plane2 float-bob-x3"></span>
+                                </div>
+                            </div>
+                            <h2 className="sec-title__title tg-element-title">Trustworthy, Swift, and Safe <br /> Logistics
+                                <span>Options</span>
+                            </h2>
+                        </div>
+
+                        <div className="btn-box">
+                            <a className="thm-btn" href="about.html">Our Solutions
+                                <i className="icon-right-arrow21"></i>
+                                <span className="hover-btn hover-bx"></span>
+                                <span className="hover-btn hover-bx2"></span>
+                                <span className="hover-btn hover-bx3"></span>
+                                <span className="hover-btn hover-bx4"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div className="container-fluid">
+                <div className="features-two__carousel owl-carousel owl-theme">
+                    
+                    <div className="features-two__single">
+                        <div className="features-two__single-img">
+                            <div className="features-two__single-img-inner">
+                                <img src="assets/images/resources/features-v2-img1.jpg" alt="" />
+
+                                <div className="features-two__single-content">
+                                    <span>Fast & Efficient</span>
+                                    <h2><a href="#">Aviation Freight</a></h2>
+
+                                    <div className="features-two__single-content-bottom">
+                                        <p>It is a long established fact that a reader will be distracted by the
+                                            readable...</p>
+
+                                        <div className="btn-box">
+                                            <a href="#"><span className="icon-right-arrow21"></span></a>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                    
+                    <div className="features-two__single">
+                        <div className="features-two__single-img">
+                            <div className="features-two__single-img-inner">
+                                <img src="assets/images/resources/features-v2-img2.jpg" alt="" />
+
+                                <div className="features-two__single-content">
+                                    <span>Cost-effective</span>
+                                    <h2><a href="#">Rail Freight</a></h2>
+
+                                    <div className="features-two__single-content-bottom">
+                                        <p>It is a long established fact that a reader will be distracted by the
+                                            readable...</p>
+
+                                        <div className="btn-box">
+                                            <a href="#"><span className="icon-right-arrow21"></span></a>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                    
+                    <div className="features-two__single">
+                        <div className="features-two__single-img">
+                            <div className="features-two__single-img-inner">
+                                <img src="assets/images/resources/features-v2-img3.jpg" alt="" />
+
+                                <div className="features-two__single-content">
+                                    <span>Sea Transport</span>
+                                    <h2><a href="#">Ocean Freight</a></h2>
+
+                                    <div className="features-two__single-content-bottom">
+                                        <p>It is a long established fact that a reader will be distracted by the
+                                            readable...</p>
+
+                                        <div className="btn-box">
+                                            <a href="#"><span className="icon-right-arrow21"></span></a>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                    
+                    <div className="features-two__single">
+                        <div className="features-two__single-img">
+                            <div className="features-two__single-img-inner">
+                                <img src="assets/images/resources/features-v2-img4.jpg" alt="" />
+
+                                <div className="features-two__single-content">
+                                    <span>Trucks & Lorries</span>
+                                    <h2><a href="#">Roadway Cargo</a></h2>
+
+                                    <div className="features-two__single-content-bottom">
+                                        <p>It is a long established fact that a reader will be distracted by the
+                                            readable...</p>
+
+                                        <div className="btn-box">
+                                            <a href="#"><span className="icon-right-arrow21"></span></a>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+        
+
+        
+        <section className="blog-one">
+            <div className="container">
+                <div className="sec-title center text-center tg-heading-subheading animation-style2">
+                    <div className="sec-title__tagline">
+                        <div className="line"></div>
+                        <div className="text tg-element-title">
+                            <h4>Blog & News</h4>
+                        </div>
+                        <div className="icon">
+                            <span className="icon-plane2 float-bob-x3"></span>
+                        </div>
+                    </div>
+                    <h2 className="sec-title__title tg-element-title">Latest News Directly <br /> From Our <span>Blog</span>
+                    </h2>
+                </div>
+                <div className="row">
+                    
+                    <div className="col-xl-4 col-lg-6 wow fadeInUp" data-wow-delay=".3s">
+                        <div className="blog-one__single">
+                            <div className="blog-one__single-img">
+                                <img src="assets/images/blog/blog-v1-img1.jpg" alt="" />
+                            </div>
+
+                            <div className="blog-one__single-content">
+                                <div className="date-box">
+                                    <h2>05</h2>
+                                    <p>FEB</p>
+                                </div>
+                                <div className="blog-one__single-content-inner">
+                                    <ul className="meta-box">
+                                        <li>
+                                            <div className="icon">
+                                                <span className="icon-user"></span>
+                                            </div>
+
+                                            <div className="text-box">
+                                                <p><a href="#">Robert Fox</a></p>
+                                            </div>
+                                        </li>
+
+                                        <li>
+                                            <div className="icon">
+                                                <span className="icon-chat"></span>
+                                            </div>
+
+                                            <div className="text-box">
+                                                <p><a href="#">2 Comment</a></p>
+                                            </div>
+                                        </li>
+                                    </ul>
+
+                                    <h2><a href="blog-details.html">How Will You Know Success <br /> When it Show Up?</a>
+                                    </h2>
+                                    <p>Logistic service provider company plays a pivotal role in the global supply chain
+                                        ecosystem by efficiently... </p>
+
+                                    <div className="btn-box">
+                                        <a className="thm-btn" href="blog-details.html">Read More
+                                            <i className="icon-right-arrow21"></i>
+                                            <span className="hover-btn hover-bx"></span>
+                                            <span className="hover-btn hover-bx2"></span>
+                                            <span className="hover-btn hover-bx3"></span>
+                                            <span className="hover-btn hover-bx4"></span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                    
+                    <div className="col-xl-4 col-lg-6 wow fadeInDown" data-wow-delay=".3s">
+                        <div className="blog-one__single">
+                            <div className="blog-one__single-img">
+                                <img src="assets/images/blog/blog-v1-img2.jpg" alt="" />
+                            </div>
+
+                            <div className="blog-one__single-content">
+                                <div className="date-box">
+                                    <h2>05</h2>
+                                    <p>FEB</p>
+                                </div>
+                                <div className="blog-one__single-content-inner">
+                                    <ul className="meta-box">
+                                        <li>
+                                            <div className="icon">
+                                                <span className="icon-user"></span>
+                                            </div>
+
+                                            <div className="text-box">
+                                                <p><a href="#">Robert Fox</a></p>
+                                            </div>
+                                        </li>
+
+                                        <li>
+                                            <div className="icon">
+                                                <span className="icon-chat"></span>
+                                            </div>
+
+                                            <div className="text-box">
+                                                <p><a href="#">2 Comment</a></p>
+                                            </div>
+                                        </li>
+                                    </ul>
+
+                                    <h2><a href="blog-details.html">Mastering Last Mile Delivery <br /> Strategies for
+                                            Success</a></h2>
+                                    <p>Logistic service provider company plays a pivotal role in the global supply chain
+                                        ecosystem by efficiently... </p>
+
+                                    <div className="btn-box">
+                                        <a className="thm-btn" href="blog-details.html">Read More
+                                            <i className="icon-right-arrow21"></i>
+                                            <span className="hover-btn hover-bx"></span>
+                                            <span className="hover-btn hover-bx2"></span>
+                                            <span className="hover-btn hover-bx3"></span>
+                                            <span className="hover-btn hover-bx4"></span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                    
+                    <div className="col-xl-4 col-lg-6 wow fadeInUp" data-wow-delay=".3s">
+                        <div className="blog-one__single">
+                            <div className="blog-one__single-img">
+                                <img src="assets/images/blog/blog-v1-img3.jpg" alt="" />
+                            </div>
+
+                            <div className="blog-one__single-content">
+                                <div className="date-box">
+                                    <h2>05</h2>
+                                    <p>FEB</p>
+                                </div>
+                                <div className="blog-one__single-content-inner">
+                                    <ul className="meta-box">
+                                        <li>
+                                            <div className="icon">
+                                                <span className="icon-user"></span>
+                                            </div>
+
+                                            <div className="text-box">
+                                                <p><a href="#">Robert Fox</a></p>
+                                            </div>
+                                        </li>
+
+                                        <li>
+                                            <div className="icon">
+                                                <span className="icon-chat"></span>
+                                            </div>
+
+                                            <div className="text-box">
+                                                <p><a href="#">2 Comment</a></p>
+                                            </div>
+                                        </li>
+                                    </ul>
+
+                                    <h2><a href="blog-details.html">Logistics Announces Launch <br /> of Greenhouse
+                                            Gas</a></h2>
+                                    <p>Logistic service provider company plays a pivotal role in the global supply chain
+                                        ecosystem by efficiently... </p>
+
+                                    <div className="btn-box">
+                                        <a className="thm-btn" href="blog-details.html">Read More
+                                            <i className="icon-right-arrow21"></i>
+                                            <span className="hover-btn hover-bx"></span>
+                                            <span className="hover-btn hover-bx2"></span>
+                                            <span className="hover-btn hover-bx3"></span>
+                                            <span className="hover-btn hover-bx4"></span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+        
+
+        
+        <section className="brand-one">
+            <div className="container">
+                <div className="brand-one__carousel owl-carousel owl-theme">
+                    
+                    <div className="brand-one__single">
+                        <div className="brand-one__single-inner">
+                            <a href="#"><img src="assets/images/brand/brand-v1-img1.png" alt="" /></a>
+                        </div>
+                    </div>
+                    
+
+                    
+                    <div className="brand-one__single">
+                        <div className="brand-one__single-inner">
+                            <a href="#"><img src="assets/images/brand/brand-v1-img2.png" alt="" /></a>
+                        </div>
+                    </div>
+                    
+
+                    
+                    <div className="brand-one__single">
+                        <div className="brand-one__single-inner">
+                            <a href="#"><img src="assets/images/brand/brand-v1-img3.png" alt="" /></a>
+                        </div>
+                    </div>
+                    
+
+                    
+                    <div className="brand-one__single">
+                        <div className="brand-one__single-inner">
+                            <a href="#"><img src="assets/images/brand/brand-v1-img4.png" alt="" /></a>
+                        </div>
+                    </div>
+                    
+
+                    
+                    <div className="brand-one__single">
+                        <div className="brand-one__single-inner">
+                            <a href="#"><img src="assets/images/brand/brand-v1-img5.png" alt="" /></a>
+                        </div>
+                    </div>
+                    
+
+                    
+                    <div className="brand-one__single">
+                        <div className="brand-one__single-inner">
+                            <a href="#"><img src="assets/images/brand/brand-v1-img6.png" alt="" /></a>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+        
+
+
+        <footer className="footer-one">
+            <div className="footer-one__pattern"><img src="assets/images/pattern/footer-v1-pattern.png" alt="#" /></div>
+            <div className="footer-one__top">
+                <div className="container">
+                    <div className="footer-one__top-inner">
+                        <div className="row">
+                            <div className="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="100ms">
+                                <div className="footer-widget__single footer-one__about">
+                                    <div className="footer-one__about-logo">
+                                        <a href="index.html"><img src="assets/images/resources/footer-logo.png"
+                                                alt=""></a>
+                                    </div>
+                                    <p className="footer-one__about-text">Logistic service provider company plays a
+                                        pivotal role in the global supply chain logistic service provider.</p>
+
+                                    <div className="footer-one__about-contact-info">
+                                        <div className="icon">
+                                            <span className="icon-support"></span>
+                                        </div>
+
+                                        <div className="text-box">
+                                            <p>Make a Call</p>
+                                            <h4><a href="tel:+1234567890">+880 123 456 789</a></h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="200ms">
+                                <div className="footer-widget__single footer-one__quick-links">
+                                    <div className="title">
+                                        <h2>Quick Links <span className="icon-plane3"></span></h2>
+                                    </div>
+
+                                    <ul className="footer-one__quick-links-list">
+                                        <li><a href="index.html"><span className="icon-right-arrow1"></span> Home</a></li>
+                                        <li><a href="about.html"><span className="icon-right-arrow1"></span> About Us</a>
+                                        </li>
+                                        <li><a href="service.html"><span className="icon-right-arrow1"></span> Service</a>
+                                        </li>
+                                        <li><a href="project.html"><span className="icon-right-arrow1"></span> Latest
+                                                Project</a></li>
+                                        <li><a href="contact.html"><span className="icon-right-arrow1"></span> Contact
+                                                Us</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div className="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="300ms">
+                                <div className="footer-widget__single footer-one__contact">
+                                    <div className="title">
+                                        <h2>Get In Touch <span className="icon-plane3"></span></h2>
+                                    </div>
+
+                                    <div className="footer-one__contact-box">
+                                        <ul>
+                                            <li>
+                                                <div className="icon">
+                                                    <span className="icon-address"></span>
+                                                </div>
+                                                <div className="text-box">
+                                                    <p>3060 Commercial Street Road <br /> Fratton, Australia</p>
+                                                </div>
+                                            </li>
+
+                                            <li>
+                                                <div className="icon">
+                                                    <span className="icon-email"></span>
+                                                </div>
+                                                <div className="text-box">
+                                                    <p><a href="mailto:yourmail@email.com">support@logistra.com</a></p>
+                                                    <p><a href="mailto:yourmail@email.com">info@logistra.com</a></p>
+                                                </div>
+                                            </li>
+
+                                            <li>
+                                                <div className="icon">
+                                                    <span className="icon-phone"></span>
+                                                </div>
+                                                <div className="text-box">
+                                                    <p><a href="tel:1234567890">+880 123 456 789 </a></p>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="400ms">
+                                <div className="footer-widget__single footer-one__subscribe">
+                                    <div className="title">
+                                        <h2>Subscribe Us <span className="icon-plane3"></span></h2>
+                                    </div>
+
+                                    <p className="footer-one__subscribe-text">Sign up for alerts, our latest blogs, <br />
+                                        thoughts, and insights</p>
+
+                                    <div className="footer-one__subscribe-form">
+                                        <form className="subscribe-form" action="#">
+                                            <input type="email" name="email" placeholder="Your E-mail" />
+                                            <button type="submit" className="thm-btn">Subcribe
+                                                <i className="icon-right-arrow21"></i>
+                                                <span className="hover-btn hover-bx"></span>
+                                                <span className="hover-btn hover-bx2"></span>
+                                                <span className="hover-btn hover-bx3"></span>
+                                                <span className="hover-btn hover-bx4"></span>
+                                            </button>
+                                        </form>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div className="footer-one__bottom">
+                <div className="container">
+
+                    <div className="footer-one__bottom-inner">
+                        <div className="footer-one__bottom-text">
+                            <p>© Copyright 2025 <a href="index.html">Logistiq.</a> All Rights Reserved</p>
+                        </div>
+
+                        <div className="footer-one__social-links">
+                            <ul>
+                                <li>
+                                    <a href="#"><span className="icon-facebook-f"></span></a>
+                                </li>
+
+                                <li>
+                                    <a href="#"><span className="icon-instagram"></span></a>
+                                </li>
+
+                                <li>
+                                    <a href="#"><span className="icon-twitter1"></span></a>
+                                </li>
+                                <li>
+                                    <a href="#"><span className="icon-linkedin"></span></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        
+
+        </div>
+<div className="mobile-nav__wrapper">
+    <div className="mobile-nav__overlay mobile-nav__toggler"></div>
+    
+    <div className="mobile-nav__content">
+        <span className="mobile-nav__close mobile-nav__toggler"><i className="fa fa-times"></i></span>
+
+        <div className="logo-box">
+            <a href="index.html" aria-label="logo image"><img src="assets/images/resources/logo-1.png" width="150"
+                    alt="" /></a>
+        </div>
+        
+        <div className="mobile-nav__container"></div>
+        
+
+        <ul className="mobile-nav__contact list-unstyled">
+            <li>
+                <i className="fa fa-envelope"></i>
+                <a href="mailto:needhelp@logistiq.com">needhelp@logistiq.com</a>
+            </li>
+            <li>
+                <i className="icon-phone"></i>
+                <a href="tel:666-888-0000">666 888 0000</a>
+            </li>
+        </ul>
+        <div className="mobile-nav__top">
+            <div className="mobile-nav__social">
+                <a href="#" className="fab fa-twitter"></a>
+                <a href="#" className="fab fa-facebook-square"></a>
+                <a href="#" className="fab fa-pinterest-p"></a>
+                <a href="#" className="fab fa-instagram"></a>
+            </div>
+        </div>
+
+
+
+    </div>
+    
+</div>
+<div className="search-popup">
+    <div className="search-popup__overlay search-toggler"></div>
+    
+    <div className="search-popup__content">
+        <form action="#">
+            <label htmlFor="search" className="sr-only">search here</label>
+            <input type="text" id="search" placeholder="Search Here..." / />
+            <button type="submit" aria-label="search submit" className="thm-btn">
+                <i className="fas fa-search"></i>
+                <span className="hover-btn hover-bx"></span>
+                <span className="hover-btn hover-bx2"></span>
+                <span className="hover-btn hover-bx3"></span>
+                <span className="hover-btn hover-bx4"></span>
+            </button>
+        </form>
+    </div>
+    
+</div>
+
+<a href="#" data-target="html" className="scroll-to-target scroll-to-top">
+    <span className="scroll-to-top__wrapper"><span className="scroll-to-top__inner"></span></span>
+    <span className="scroll-to-top__text"> Go Back Top</span>
+</a>    
+
+    
+    <div className="loader-wrap">
+        <div className="preloader">
+            <div className="preloader-close">x</div>
+            <div id="handle-preloader" className="handle-preloader">
+                <div className="animation-preloader">
+                    <div className="spinner"></div>
+                    <div className="txt-loading">
+                        <span data-text-preloader="l" className="letters-loading"> l </span>
+                        <span data-text-preloader="o" className="letters-loading"> o </span>
+                        <span data-text-preloader="g" className="letters-loading"> g </span>
+                        <span data-text-preloader="i" className="letters-loading"> i </span>
+                        <span data-text-preloader="s" className="letters-loading"> s </span>
+                        <span data-text-preloader="t" className="letters-loading"> t </span>
+                        <span data-text-preloader="i" className="letters-loading"> i </span>
+                        <span data-text-preloader="q" className="letters-loading"> q </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+   
+<script src="assets/js/jquery-3.6.0.min.js"></script>
+<script src="assets/js/jquery.ajaxchimp.min.js"></script>
+<script src="assets/js/jquery.validate.min.js"></script>
+<script src="assets/js/swiper.min.js"></script>
+<script src="assets/js/wNumb.min.js"></script>
+
+
+<script src="assets/js/curved-text/jquery.circleType.js"></script>
+<script src="assets/js/curved-text/jquery.fittext.js"></script>
+<script src="assets/js/curved-text/jquery.lettering.min.js"></script>
+
+
+<script src="assets/js/gsap/gsap.js"></script>
+<script src="assets/js/gsap/ScrollTrigger.js"></script>
+<script src="assets/js/gsap/SplitText.js"></script>
+
+
+<script src="assets/js/01-bootstrap.bundle.min.js"></script>
+<script src="assets/js/02-countdown.min.js"></script>
+<script src="assets/js/03-jquery.appear.min.js"></script>
+<script src="assets/js/04-jquery.nice-select.min.js"></script>
+<script src="assets/js/05-jquery-sidebar-content.js"></script>
+<script src="assets/js/06-marquee.min.js"></script>
+<script src="assets/js/07-owl.carousel.min.js"></script>
+<script src="assets/js/08-jarallax.min.js"></script>
+<script src="assets/js/09-odometer.min.js"></script>
+<script src="assets/js/10-jquery-ui.js"></script>
+<script src="assets/js/11-jquery.magnific-popup.min.js"></script>
+<script src="assets/js/12-wow.js"></script>
+<script src="assets/js/13-isotope.js"></script>
+
+
+<script src="assets/js/script.js"></script>
+
+
+
+</body>
+
+
+
+</html>
