@@ -627,6 +627,9 @@
         dynamicCurrentMenuClass(mainNavUL);
     }
 
+    // React components (MobileMenu, Header) handle the mobile and sticky nav structure now.
+    // Commenting out jQuery cloning logic to prevent double DOM nodes and friction.
+    /*
     if ($(".main-menu__list").length && $(".mobile-nav__container").length) {
         let navContent = document.querySelector(".main-menu__list").outerHTML;
         let mobileNavContainer = document.querySelector(".mobile-nav__container");
@@ -658,6 +661,7 @@
             });
         });
     }
+    */
 
     if ($(".mobile-nav__toggler").length) {
         $(".mobile-nav__toggler").on("click", function (e) {
@@ -902,18 +906,18 @@
                 });
                 gsap.set(quote.split.words, {
                     opacity: 0,
-                    y: 20,
+                    x: -50,
                 });
                 quote.animation = gsap.to(quote.split.words, {
                     scrollTrigger: {
                         trigger: quote,
-                        start: "top 95%",
+                        start: "top 92%",
                     },
-                    y: 0,
+                    x: 0,
                     opacity: 1,
-                    duration: 0.8,
+                    duration: 0.7,
                     ease: "power2.out",
-                    stagger: 0.04,
+                    stagger: 0.03,
                 });
             } else {
                 quote.split = new SplitText(quote, {
@@ -924,36 +928,23 @@
                     perspective: 400,
                 });
 
-                if (animation[1] == "style1") {
-                    gsap.set(quote.split.chars, {
-                        opacity: 0,
-                        y: "90%",
-                        rotateX: "-40deg",
-                    });
-                }
-                if (animation[1] == "style2") {
-                    gsap.set(quote.split.chars, {
-                        opacity: 0,
-                        x: "50",
-                    });
-                }
-                if (animation[1] == "style3") {
-                    gsap.set(quote.split.chars, {
-                        opacity: 0,
-                    });
-                }
+                gsap.set(quote.split.chars, {
+                    opacity: 0,
+                    x: -50,
+                });
+
                 quote.animation = gsap.to(quote.split.chars, {
                     scrollTrigger: {
                         trigger: quote,
-                        start: "top 90%",
+                        start: "top 88%",
                     },
-                    x: "0",
-                    y: "0",
-                    rotateX: "0",
+                    x: 0,
+                    y: 0,
+                    rotateX: 0,
                     opacity: 1,
-                    duration: 1,
-                    ease: Back.easeOut,
-                    stagger: 0.02,
+                    duration: 0.8,
+                    ease: "power3.out",
+                    stagger: 0.015,
                 });
             }
         });

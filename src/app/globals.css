@@ -15,10 +15,47 @@
   }
 }
 
+html {
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+
 body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Hardware accelerated smooth animations across all pages */
+.wow,
+.animated,
+.reveal,
+.float-bob,
+.float-bob-y,
+.float-bob-x,
+.float-bob-y3,
+.rotate-me {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-perspective: 1000;
+  perspective: 1000;
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+  will-change: transform, opacity;
+}
+
+/* Smooth transitions for split text lines and words */
+.tg-heading-subheading .tg-element-title {
+  will-change: transform, opacity;
+  overflow: visible;
+}
+
+.split-line {
+  overflow: visible !important;
 }
 
 @layer utilities {
@@ -26,3 +63,4 @@ body {
     text-wrap: balance;
   }
 }
+

@@ -153,7 +153,7 @@
       }
 
       // ========== 8. JARALLAX ==========
-      if (typeof $.fn.jarallax !== 'undefined') {
+      if (typeof $.fn.jarallax !== 'undefined' && !isMobile) {
         $('.jarallax').jarallax({ speed: 0.3, imgPosition: '50% 0%' });
       }
 
@@ -207,15 +207,7 @@
       if (typeof gsap !== 'undefined' && typeof ScrollTrigger !== 'undefined') {
         gsap.registerPlugin(ScrollTrigger);
 
-        // Image reveal (.reveal) — re-run here as a safety net for
-        // client-side navigation / late hydration: script.js can execute
-        // before React has rendered a given page's .reveal elements
-        // (e.g. on /about), which would otherwise leave those images
-        // permanently hidden (.reveal defaults to visibility:hidden until
-        // its GSAP timeline runs). The data-reveal-init guard makes sure
-        // each element's timeline is only ever created once, no matter
-        // how many times this runs or whether script.js already handled it
-        // — so it can't re-freeze an already-revealed image.
+        // Image reveal (.reveal)
         if ($(".reveal").length) {
           var revealContainers = document.querySelectorAll(".reveal");
           revealContainers.forEach(function(container) {
@@ -225,12 +217,13 @@
             var tl = gsap.timeline({
               scrollTrigger: {
                 trigger: container,
+                start: "top 85%",
                 toggleActions: "play none none none",
               },
             });
             tl.set(container, { autoAlpha: 1 });
-            tl.from(container, 1.5, { xPercent: -100, ease: Power2.out });
-            tl.from(image, 1.5, { xPercent: 100, scale: 1.3, delay: -1.5, ease: Power2.out });
+            tl.from(container, 1.2, { xPercent: -100, ease: Power2.easeOut });
+            tl.from(image, 1.2, { xPercent: 100, scale: 1.2, delay: -1.2, ease: Power2.easeOut });
           });
         }
 
@@ -248,35 +241,30 @@
             if (animation[1] == 'style4') return;
 
             if (isMobile) {
-              // On mobile, split by words to prevent choppy character wrapping and layout thrashing
+              // On mobile, split by words to eliminate layout thrashing & jitter
               quote.split = new SplitText(quote, {
                 type: 'lines,words', linesClass: 'split-line'
               });
-              gsap.set(quote.split.words, { opacity: 0, y: 20 });
+              gsap.set(quote.split.words, { opacity: 0, x: -50 });
               quote.animation = gsap.to(quote.split.words, {
-                scrollTrigger: { trigger: quote, start: 'top 95%' },
-                y: 0, opacity: 1,
-                duration: 0.8, ease: 'power2.out', stagger: 0.04
+                scrollTrigger: { trigger: quote, start: 'top 92%' },
+                x: 0, opacity: 1,
+                duration: 0.7, ease: 'power2.out', stagger: 0.03
               });
             } else {
+              // On desktop, silky smooth character/word stagger
               quote.split = new SplitText(quote, {
                 type: 'lines,words,chars', linesClass: 'split-line'
               });
               gsap.set(quote, { perspective: 400 });
 
-              if (animation[1] == 'style1') {
-                gsap.set(quote.split.chars, { opacity: 0, y: '90%', rotateX: '-40deg' });
-              }
-              if (animation[1] == 'style2') {
-                gsap.set(quote.split.chars, { opacity: 0, x: '50' });
-              }
-              if (animation[1] == 'style3') {
-                gsap.set(quote.split.chars, { opacity: 0 });
-              }
+              // User requested text to animate from left
+              gsap.set(quote.split.chars, { opacity: 0, x: -50 });
+              
               quote.animation = gsap.to(quote.split.chars, {
-                scrollTrigger: { trigger: quote, start: 'top 90%' },
-                x: '0', y: '0', rotateX: '0', opacity: 1,
-                duration: 1, ease: 'back.out', stagger: 0.02
+                scrollTrigger: { trigger: quote, start: 'top 88%' },
+                x: 0, y: 0, rotateX: 0, opacity: 1,
+                duration: 0.8, ease: 'power3.out', stagger: 0.015
               });
             }
           });
