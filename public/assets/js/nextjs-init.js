@@ -359,5 +359,27 @@
 
     // Extra fallback in case load event already fired
     setTimeout(initEverything, 2500);
+
+    // Listen for Next.js route changes to re-trigger animations
+    window.addEventListener('nextjs-route-changed', function() {
+      window.__animationsInitialized = false;
+      setTimeout(initEverything, 200);
+      
+      // Also trigger script.js main animations again if needed
+      if (typeof ScrollTrigger !== 'undefined') {
+        setTimeout(function() { ScrollTrigger.refresh(); }, 500);
+      }
+      
+      // Re-init WOW
+      if (typeof WOW !== 'undefined') {
+        new WOW({
+          boxClass: 'wow',
+          animateClass: 'animated',
+          offset: 0,
+          mobile: true,
+          live: true
+        }).init();
+      }
+    });
   });
 })();

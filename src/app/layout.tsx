@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Script from "next/script";
 import "./globals.css";
+import RouteChangeListener from "@/components/layout/RouteChangeListener";
 
 export const metadata: Metadata = {
   title: "Home One || Logistiq || Logistiq Laravel Template",
@@ -74,6 +75,7 @@ export default function RootLayout({
         <div className="page-wrapper">
           {children}
         </div>
+        <RouteChangeListener />
 
         {/* Start Preloader */}
         <div className="loader-wrap">
