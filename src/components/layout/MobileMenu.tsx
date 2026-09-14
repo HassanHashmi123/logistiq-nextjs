@@ -59,22 +59,8 @@ export default function MobileMenu() {
           <div className="mobile-nav__container">
             <ul className="main-menu__list">
               {/* Home */}
-              <li className="dropdown">
+              <li className="">
                 <Link href="/" onClick={closeMenu}>Home</Link>
-                <button
-                  type="button"
-                  className={`expanded ${expandedDropdowns["home"] ? "open" : ""}`}
-                  onClick={(e) => toggleDropdown("home", e)}
-                  aria-label="Toggle Home Submenu"
-                >
-                  <i className="fa fa-angle-down"></i>
-                </button>
-                <ul style={{ display: expandedDropdowns["home"] ? "block" : "none" }}>
-                  <li><Link href="/" onClick={closeMenu}>Home One</Link></li>
-                  <li><Link href="/index2" onClick={closeMenu}>Home Two</Link></li>
-                  <li><Link href="/index3" onClick={closeMenu}>Home Three</Link></li>
-                  <li><Link href="/index-dark" onClick={closeMenu}>Home Dark</Link></li>
-                </ul>
               </li>
 
               {/* About Us */}

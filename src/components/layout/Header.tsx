@@ -63,14 +63,8 @@ export default function Header() {
                             <Link href="#" className="mobile-nav__toggler"><i className="fa fa-bars"></i></Link>
 
                             <ul className="main-menu__list">
-                              <li className="dropdown">
+                              <li className="">
                                 <Link href="/">Home</Link>
-                                <ul>
-                                  <li><Link href="/">Home One</Link></li>
-                                  <li><Link href="/index2">Home Two</Link></li>
-                                  <li><Link href="/index3">Home Three</Link></li>
-                                  <li><Link href="/index-dark">Home Dark</Link></li>
-                                </ul>
                               </li>
 
                               <li className=""><Link href="/about">About Us</Link></li>
