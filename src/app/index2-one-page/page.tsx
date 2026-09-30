@@ -312,7 +312,7 @@ export default function Index2OnePage() {
                                 <span className="icon-plane2 float-bob-x3"></span>
                             </div>
                         </div>
-                        <h2 className="sec-title__title tg-element-title">The Transportation and <br /> Logistics
+                        <h2 className="sec-title__title tg-element-title">The Transportation and <br /> Logistics{" "}
                             <span>Industry</span>
                         </h2>
                     </div>
@@ -1375,7 +1375,7 @@ export default function Index2OnePage() {
                         <span className="icon-plane2 float-bob-x3"></span>
                     </div>
                 </div>
-                <h2 className="sec-title__title tg-element-title">Transportation Services We <br /> Are Often
+                <h2 className="sec-title__title tg-element-title">Transportation Services We <br /> Are Often{" "}
                     <span>Considered</span>
                 </h2>
             </div>

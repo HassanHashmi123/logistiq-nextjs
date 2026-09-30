@@ -8,27 +8,31 @@ Sliding Text One
     display: block;
     margin-top: -144px;
     z-index: 1;
+    overflow: hidden;
 }
 
 .sliding-text-one__wrap {
     position: relative;
     display: block;
+    overflow: hidden;
+    width: 100%;
 }
 
 .sliding-text__list {
     position: relative;
     display: flex;
     align-items: center;
-    flex-wrap: wrap;
-    flex-wrap: nowrap;
+    flex-wrap: nowrap !important;
+    white-space: nowrap !important;
     width: fit-content;
 }
 
 .sliding-text__list li {
-    osition: relative;
-    display: block;
+    position: relative;
+    display: inline-block;
     float: left;
     margin-right: 40px;
+    white-space: nowrap;
 }
 
 .sliding-text__title {

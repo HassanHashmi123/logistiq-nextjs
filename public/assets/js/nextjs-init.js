@@ -34,15 +34,23 @@
         });
       }
 
-      // ========== 2. WOW.js ANIMATIONS ==========
+      // ========== 2. WOW.js ANIMATIONS (Single managed instance, no heavy MutationObserver) ==========
       if (typeof WOW !== 'undefined') {
-        new WOW({
-          boxClass: 'wow',
-          animateClass: 'animated',
-          offset: 0,
-          mobile: true,
-          live: false
-        }).init();
+        try {
+          if (window.__currentWOW && typeof window.__currentWOW.stop === 'function') {
+            window.__currentWOW.stop();
+          }
+          window.__currentWOW = new WOW({
+            boxClass: 'wow',
+            animateClass: 'animated',
+            offset: 20,
+            mobile: true,
+            live: false
+          });
+          window.__currentWOW.init();
+        } catch (e) {
+          console.warn('[WOW] Init warning:', e);
+        }
       }
 
       // ========== 3. MOBILE NAV ==========
@@ -64,83 +72,91 @@
         }
       }
 
-      // ========== 6. OWL CAROUSELS ==========
+      // ========== 6. OWL CAROUSELS (Robust re-initialization) ==========
+      function setupCarousel($target, config) {
+        if (!$target || !$target.length) return;
+        $target.each(function() {
+          var $carousel = $(this);
+          if ($carousel.hasClass('owl-loaded')) {
+            try {
+              $carousel.trigger('destroy.owl.carousel');
+            } catch (err) {}
+            $carousel.removeClass('owl-loaded owl-drag');
+          }
+          try {
+            $carousel.owlCarousel(config);
+          } catch (err) {
+            console.warn('[Owl] Init warning:', err);
+          }
+        });
+      }
+
       if (typeof $.fn.owlCarousel !== 'undefined') {
         // Service carousel
-        if ($('.service-one__carousel').length && !$('.service-one__carousel').hasClass('owl-loaded')) {
-          $('.service-one__carousel').owlCarousel({
-            loop: true, margin: 30, nav: false, dots: true,
-            smartSpeed: 500, autoplay: true, autoplayTimeout: 7000,
-            responsive: { 0:{items:1}, 768:{items:2}, 1200:{items:3} }
-          });
-        }
+        setupCarousel($('.service-one__carousel'), {
+          loop: true, margin: 30, nav: false, dots: true,
+          smartSpeed: 600, autoplay: true, autoplayTimeout: 7000,
+          responsive: { 0:{items:1}, 768:{items:2}, 1200:{items:3} }
+        });
+
         // Brand carousel
-        if ($('.brand-one__carousel').length && !$('.brand-one__carousel').hasClass('owl-loaded')) {
-          $('.brand-one__carousel').owlCarousel({
-            loop: true, margin: 0, nav: false, dots: false,
-            smartSpeed: 500, autoplay: true, autoplayTimeout: 7000,
-            responsive: { 0:{items:2}, 768:{items:3}, 992:{items:4}, 1200:{items:5}, 1320:{items:6} }
-          });
-        }
+        setupCarousel($('.brand-one__carousel'), {
+          loop: true, margin: 0, nav: false, dots: false,
+          smartSpeed: 600, autoplay: true, autoplayTimeout: 7000,
+          responsive: { 0:{items:2}, 768:{items:3}, 992:{items:4}, 1200:{items:5}, 1320:{items:6} }
+        });
+
         // Testimonial One carousel
-        if ($('.testimonial-one__carousel').length && !$('.testimonial-one__carousel').hasClass('owl-loaded')) {
-          $('.testimonial-one__carousel').owlCarousel({
-            loop: true, margin: 0, nav: false, dots: false,
-            smartSpeed: 500, autoplay: true, autoplayTimeout: 7000,
-            responsive: { 0:{items:1}, 768:{items:1}, 1200:{items:1} }
-          });
-        }
+        setupCarousel($('.testimonial-one__carousel'), {
+          loop: true, margin: 0, nav: false, dots: false,
+          smartSpeed: 600, autoplay: true, autoplayTimeout: 7000,
+          responsive: { 0:{items:1}, 768:{items:1}, 1200:{items:1} }
+        });
+
         // Team carousel
-        if ($('.team-one__carousel').length && !$('.team-one__carousel').hasClass('owl-loaded')) {
-          $('.team-one__carousel').owlCarousel({
-            loop: true, margin: 20, nav: false, dots: true,
-            smartSpeed: 500, autoplay: true, autoplayTimeout: 7000,
-            responsive: { 0:{items:1}, 768:{items:2}, 1200:{items:3} }
-          });
-        }
+        setupCarousel($('.team-one__carousel'), {
+          loop: true, margin: 20, nav: false, dots: true,
+          smartSpeed: 600, autoplay: true, autoplayTimeout: 7000,
+          responsive: { 0:{items:1}, 768:{items:2}, 1200:{items:3} }
+        });
+
         // Testimonial Two carousel
-        if ($('.testimonial-two__carousel').length && !$('.testimonial-two__carousel').hasClass('owl-loaded')) {
-          $('.testimonial-two__carousel').owlCarousel({
-            loop: true, margin: 20, nav: false, dots: true,
-            smartSpeed: 500, autoplay: true, autoplayTimeout: 7000,
-            responsive: { 0:{items:1}, 768:{items:1}, 992:{items:2} }
-          });
-        }
+        setupCarousel($('.testimonial-two__carousel'), {
+          loop: true, margin: 20, nav: false, dots: true,
+          smartSpeed: 600, autoplay: true, autoplayTimeout: 7000,
+          responsive: { 0:{items:1}, 768:{items:1}, 992:{items:2} }
+        });
+
         // Testimonial Three carousel
-        if ($('.testimonial-three__carousel').length && !$('.testimonial-three__carousel').hasClass('owl-loaded')) {
-          $('.testimonial-three__carousel').owlCarousel({
-            loop: true, margin: 20, nav: true, dots: false,
-            smartSpeed: 500, autoplay: true, autoplayTimeout: 7000,
-            navText: ['<span class="icon-left-arrow"></span>','<span class="icon-right-arrow"></span>'],
-            responsive: { 0:{items:1}, 768:{items:2}, 1200:{items:3} }
-          });
-        }
+        setupCarousel($('.testimonial-three__carousel'), {
+          loop: true, margin: 20, nav: true, dots: false,
+          smartSpeed: 600, autoplay: true, autoplayTimeout: 7000,
+          navText: ['<span class="icon-left-arrow"></span>','<span class="icon-right-arrow"></span>'],
+          responsive: { 0:{items:1}, 768:{items:2}, 1200:{items:3} }
+        });
+
         // Slider One (main hero slider)
-        if ($('.slider-one__carousel').length && !$('.slider-one__carousel').hasClass('owl-loaded')) {
-          $('.slider-one__carousel').owlCarousel({
-            loop: true, animateOut: 'fadeOut', animateIn: 'fadeIn',
-            margin: 0, nav: true, dots: false,
-            smartSpeed: 500, autoplay: true, autoplayTimeout: 7000,
-            navText: ['<span class="icon-right-arrow2"></span>','<span class="icon-right-arrow21"></span>'],
-            responsive: { 0:{items:1}, 600:{items:1}, 992:{items:1} }
-          });
-        }
+        setupCarousel($('.slider-one__carousel'), {
+          loop: true, animateOut: 'fadeOut', animateIn: 'fadeIn',
+          margin: 0, nav: true, dots: false,
+          smartSpeed: 700, autoplay: true, autoplayTimeout: 7000,
+          navText: ['<span class="icon-right-arrow2"></span>','<span class="icon-right-arrow21"></span>'],
+          responsive: { 0:{items:1}, 600:{items:1}, 992:{items:1} }
+        });
+
         // Project carousel
-        if ($('.project-one__carousel').length && !$('.project-one__carousel').hasClass('owl-loaded')) {
-          $('.project-one__carousel').owlCarousel({
-            loop: true, margin: 30, nav: false, dots: true,
-            smartSpeed: 500, autoplay: true, autoplayTimeout: 7000,
-            responsive: { 0:{items:1}, 768:{items:2}, 1200:{items:3} }
-          });
-        }
+        setupCarousel($('.project-one__carousel'), {
+          loop: true, margin: 30, nav: false, dots: true,
+          smartSpeed: 600, autoplay: true, autoplayTimeout: 7000,
+          responsive: { 0:{items:1}, 768:{items:2}, 1200:{items:3} }
+        });
+
         // Blog carousel
-        if ($('.blog-one__carousel').length && !$('.blog-one__carousel').hasClass('owl-loaded')) {
-          $('.blog-one__carousel').owlCarousel({
-            loop: true, margin: 30, nav: false, dots: true,
-            smartSpeed: 500, autoplay: true, autoplayTimeout: 7000,
-            responsive: { 0:{items:1}, 768:{items:2}, 1200:{items:3} }
-          });
-        }
+        setupCarousel($('.blog-one__carousel'), {
+          loop: true, margin: 30, nav: false, dots: true,
+          smartSpeed: 600, autoplay: true, autoplayTimeout: 7000,
+          responsive: { 0:{items:1}, 768:{items:2}, 1200:{items:3} }
+        });
       }
 
       // ========== 7. COUNTERS / ODOMETER ==========
@@ -194,36 +210,53 @@
 
       // ========== 13. MARQUEE ==========
       if (typeof $.fn.marquee !== 'undefined') {
-        if ($('.marquee_mode').length) {
-          $('.marquee_mode').marquee({
+        $('.marquee_mode').each(function() {
+          var $m = $(this);
+          if ($m.data('marquee-active')) return;
+          $m.data('marquee-active', true);
+          $m.marquee({
             speed: 30, gap: 0, delayBeforeStart: 0,
             direction: 'left', duplicated: true,
             pauseOnHover: true, startVisible: true
           });
-        }
+        });
       }
 
       // ========== 14. GSAP REVEAL ANIMATION ==========
       if (typeof gsap !== 'undefined' && typeof ScrollTrigger !== 'undefined') {
         gsap.registerPlugin(ScrollTrigger);
 
+        // Clean dead triggers from previous pages
+        try {
+          ScrollTrigger.getAll().forEach(function(st) {
+            if (!st.trigger || !document.body.contains(st.trigger)) {
+              st.kill();
+            }
+          });
+        } catch(e) {}
+
         // Image reveal (.reveal)
         if ($(".reveal").length) {
           var revealContainers = document.querySelectorAll(".reveal");
           revealContainers.forEach(function(container) {
-            if (container.dataset.revealInit) return;
-            container.dataset.revealInit = "1";
+            if (container.dataset.revealActive) return;
+            container.dataset.revealActive = "true";
+
             var image = container.querySelector("img");
+            if (!image) return;
+
+            // Ensure container is always visible
+            gsap.set(container, { autoAlpha: 1 });
+
             var tl = gsap.timeline({
               scrollTrigger: {
                 trigger: container,
-                start: "top 85%",
+                start: "top 90%",
                 toggleActions: "play none none none",
               },
             });
-            tl.set(container, { autoAlpha: 1 });
-            tl.from(container, 1.2, { xPercent: -100, ease: Power2.easeOut });
-            tl.from(image, 1.2, { xPercent: 100, scale: 1.2, delay: -1.2, ease: Power2.easeOut });
+            tl.from(container, 0.9, { xPercent: -100, ease: "power2.out" });
+            tl.from(image, 0.9, { xPercent: 100, scale: 1.15, delay: -0.9, ease: "power2.out" });
           });
         }
 
@@ -233,7 +266,9 @@
           var quotes = document.querySelectorAll('.tg-heading-subheading .tg-element-title');
           quotes.forEach(function(quote) {
             if (quote.animation) {
-              quote.animation.progress(1).kill();
+              quote.animation.kill();
+            }
+            if (quote.split) {
               quote.split.revert();
             }
             var getclass = quote.closest('.tg-heading-subheading').className;
@@ -241,34 +276,35 @@
             if (animation[1] == 'style4') return;
 
             if (isMobile) {
-              // On mobile, split by words to eliminate layout thrashing & jitter
+              // Mobile: gentle, lightweight word fade & slide
               quote.split = new SplitText(quote, {
                 type: 'lines,words', linesClass: 'split-line'
               });
-              gsap.set(quote.split.words, { opacity: 0, x: -50 });
+              gsap.set(quote.split.words, { opacity: 0, x: -25 });
               quote.animation = gsap.to(quote.split.words, {
                 scrollTrigger: { trigger: quote, start: 'top 92%' },
                 x: 0, opacity: 1,
                 duration: 0.7, ease: 'power2.out', stagger: 0.03
               });
             } else {
-              // On desktop, silky smooth character/word stagger
+              // Desktop: elegant character fade & slide from left
               quote.split = new SplitText(quote, {
                 type: 'lines,words,chars', linesClass: 'split-line'
               });
-              gsap.set(quote, { perspective: 400 });
-
-              // User requested text to animate from left
-              gsap.set(quote.split.chars, { opacity: 0, x: -50 });
+              gsap.set(quote.split.chars, { opacity: 0, x: -30 });
               
               quote.animation = gsap.to(quote.split.chars, {
                 scrollTrigger: { trigger: quote, start: 'top 88%' },
                 x: 0, y: 0, rotateX: 0, opacity: 1,
-                duration: 0.8, ease: 'power3.out', stagger: 0.015
+                duration: 0.8, ease: 'power2.out', stagger: 0.015
               });
             }
           });
         }
+
+        try {
+          ScrollTrigger.refresh();
+        } catch(e) {}
       }
 
       // ========== 15. CURVED CIRCLE TEXT ==========
@@ -294,28 +330,7 @@
         }
       }
 
-      // ========== 17. SCROLL-BASED EVENTS ==========
-      $(window).off('scroll.nextjsInit').on('scroll.nextjsInit', function() {
-        // Sticky header
-        if ($('.stricked-menu').length) {
-          var stricky = $('.stricked-menu');
-          if ($(window).scrollTop() > 130) {
-            stricky.addClass('stricky-fixed');
-          } else {
-            stricky.removeClass('stricky-fixed');
-          }
-        }
-        // Scroll to top button visibility
-        if ($('.scroll-to-top').length) {
-          if ($(window).scrollTop() > 500) {
-            $('.scroll-to-top').addClass('show');
-          } else {
-            $('.scroll-to-top').removeClass('show');
-          }
-        }
-      });
-
-      // ========== 18. ACCORDION (FAQ) ==========
+      // ========== 17. ACCORDION (FAQ) ==========
       if ($('.accrodion-grp').length) {
         var towns = document.querySelectorAll('.accrodion-grp');
         towns.forEach(function(town) {
@@ -333,7 +348,7 @@
         });
       }
 
-      // ========== 19. TABS ==========
+      // ========== 18. TABS ==========
       if ($('.tab-btns .tab-btn').length) {
         $('.tab-btns .tab-btn').off('click').on('click', function(e) {
           e.preventDefault();
@@ -350,36 +365,26 @@
 
     // Run after DOM is ready and all scripts have had time to load
     if (document.readyState === 'complete') {
-      setTimeout(initEverything, 500);
+      setTimeout(initEverything, 300);
     } else {
       $(window).on('load', function() {
-        setTimeout(initEverything, 500);
+        setTimeout(initEverything, 300);
       });
     }
 
     // Extra fallback in case load event already fired
-    setTimeout(initEverything, 2500);
+    setTimeout(initEverything, 1500);
 
-    // Listen for Next.js route changes to re-trigger animations
+    // Listen for Next.js route changes to re-trigger animations seamlessly
     window.addEventListener('nextjs-route-changed', function() {
       window.__animationsInitialized = false;
-      setTimeout(initEverything, 200);
-      
-      // Also trigger script.js main animations again if needed
-      if (typeof ScrollTrigger !== 'undefined') {
-        setTimeout(function() { ScrollTrigger.refresh(); }, 500);
-      }
-      
-      // Re-init WOW
-      if (typeof WOW !== 'undefined') {
-        new WOW({
-          boxClass: 'wow',
-          animateClass: 'animated',
-          offset: 0,
-          mobile: true,
-          live: true
-        }).init();
-      }
+      // Fast first pass to show carousel & images immediately
+      setTimeout(initEverything, 60);
+      // Second pass to ensure correct heights and triggers after paint
+      setTimeout(function() {
+        window.__animationsInitialized = false;
+        initEverything();
+      }, 260);
     });
   });
 })();

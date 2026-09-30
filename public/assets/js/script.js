@@ -832,42 +832,66 @@
         }
     });
 
-    // window scroll event
-    $(window).on("scroll", function () {
-        if ($(".stricked-menu").length) {
-            var headerScrollPos = 130;
-            var stricky = $(".stricked-menu");
-            if ($(window).scrollTop() > headerScrollPos) {
+    // High-performance RAF throttled scroll event (eliminates mobile friction and layout jank)
+    let isScrollTicking = false;
+    let cachedDocHeight = 0;
+    let lastHeightCheck = 0;
+
+    function handleThrottledScroll() {
+        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+        // Sticky main menu
+        const stricky = $(".stricked-menu");
+        if (stricky.length) {
+            if (scrollTop > 130) {
                 stricky.addClass("stricky-fixed");
-            } else if ($(this).scrollTop() <= headerScrollPos) {
+            } else {
                 stricky.removeClass("stricky-fixed");
             }
         }
 
-        OnePageMenuScroll();
-    });
-
-    $(window).on("scroll", function () {
-        handleScrollbar();
-        if ($(".sticky-header--one-page").length) {
-            var headerScrollPos = 120;
-            var stricky = $(".sticky-header--one-page");
-            if ($(window).scrollTop() > headerScrollPos) {
-                stricky.addClass("active");
-            } else if ($(this).scrollTop() <= headerScrollPos) {
-                stricky.removeClass("active");
-            }
-        }
-
-        var scrollToTopBtn = ".scroll-to-top";
-        if (scrollToTopBtn.length) {
-            if ($(window).scrollTop() > 500) {
-                $(scrollToTopBtn).addClass("show");
+        // Sticky one-page menu
+        const strickyOnePage = $(".sticky-header--one-page");
+        if (strickyOnePage.length) {
+            if (scrollTop > 120) {
+                strickyOnePage.addClass("active");
             } else {
-                $(scrollToTopBtn).removeClass("show");
+                strickyOnePage.removeClass("active");
             }
         }
-    });
+
+        // Scroll to top button & progress
+        const scrollToTopBtn = $(".scroll-to-top");
+        if (scrollToTopBtn.length) {
+            if (scrollTop > 500) {
+                scrollToTopBtn.addClass("show");
+            } else {
+                scrollToTopBtn.removeClass("show");
+            }
+            const now = Date.now();
+            if (!cachedDocHeight || now - lastHeightCheck > 1000) {
+                cachedDocHeight = document.body.scrollHeight || document.documentElement.scrollHeight || 1;
+                lastHeightCheck = now;
+            }
+            const scrollPos = (window.innerHeight || document.documentElement.clientHeight) + scrollTop;
+            const percentage = Math.min(100, Math.max(0, (scrollPos / cachedDocHeight) * 100));
+            $(".scroll-to-top .scroll-to-top__inner").css("width", percentage + "%");
+        }
+
+        // Only run OnePageMenuScroll if the one-page menu actually exists on this page
+        if ($(".one-page-scroll-menu").length) {
+            OnePageMenuScroll();
+        }
+
+        isScrollTicking = false;
+    }
+
+    window.addEventListener("scroll", function () {
+        if (!isScrollTicking) {
+            window.requestAnimationFrame(handleThrottledScroll);
+            isScrollTicking = true;
+        }
+    }, { passive: true });
 
     /*=============================================
         Tg Title Animation	      
@@ -954,14 +978,19 @@
     $("select:not(.ignore)").niceSelect();
 
     if ($(".marquee_mode").length) {
-        $(".marquee_mode").marquee({
-            speed: 30,
-            gap: 0,
-            delayBeforeStart: 0,
-            direction: "left",
-            duplicated: true,
-            pauseOnHover: true,
-            startVisible: true,
+        $(".marquee_mode").each(function () {
+            var $m = $(this);
+            if ($m.data("marquee-active")) return;
+            $m.data("marquee-active", true);
+            $m.marquee({
+                speed: 30,
+                gap: 0,
+                delayBeforeStart: 0,
+                direction: "left",
+                duplicated: true,
+                pauseOnHover: true,
+                startVisible: true,
+            });
         });
     }
 })(jQuery);

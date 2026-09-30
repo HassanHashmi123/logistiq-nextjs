@@ -552,7 +552,7 @@ export default function About() {
                                         <span className="icon-plane2 float-bob-x3"></span>
                                     </div>
                                 </div>
-                                <h2 className="sec-title__title tg-element-title">Efficient, Safe, & Swift <br /> Logistics
+                                <h2 className="sec-title__title tg-element-title">Efficient, Safe, & Swift <br /> Logistics{" "}
                                     <span>Solution!</span></h2>
                             </div>
 

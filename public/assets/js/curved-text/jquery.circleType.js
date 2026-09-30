@@ -101,7 +101,7 @@ $.fn.circleType = function (options) {
                     console.log('FitText.js is required when using the fitText option');
                 } else {
                     $(elem).fitText();
-                    $(window).resize(function () {
+                    $(window).on('resize', function () {
                         updateHeight();
                     });
                 }
@@ -132,19 +132,19 @@ $.fn.circleType = function (options) {
         }
 
         if (settings.fluid && !settings.fitText) {
-            $(window).resize(function () {
+            $(window).on('resize', function () {
                 layout();
             });
         }
 
+        elem.style.visibility = 'visible';
+        layout();
+
         if (document.readyState !== "complete") {
-            elem.style.visibility = 'hidden';
-            $(window).load(function () {
+            $(window).on('load', function () {
                 elem.style.visibility = 'visible';
                 layout();
             });
-        } else {
-            layout();
         }
     });
 };

@@ -284,8 +284,7 @@ export default function BlogStandard() {
                                 <h3 className="sidebar__title">Categories</h3>
                                 <ul className="sidebar__category-list">
                                     <li><a href="#">New Technologies <span>(12)</span></a></li>
-                                    <li className="active"><a href="#">Parallax Effect
-                                            <span>(15)</span></a></li>
+                                    <li className="active"><a href="#">Parallax Effect <span>(15)</span></a></li>
                                     <li><a href="#">Digital Marketing <span>(08)</span></a></li>
                                     <li><a href="#">Content Writting <span>(20)</span></a></li>
                                     <li><a href="#">One Page Template <span>(14)</span></a></li>
