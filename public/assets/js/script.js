@@ -64,40 +64,8 @@
         });
     }
 
-    //Image Reveal Animation
-    if ($(".reveal").length) {
-        gsap.registerPlugin(ScrollTrigger);
-        let revealContainers = document.querySelectorAll(".reveal");
-        revealContainers.forEach((container) => {
-            // Guard: in Next.js this script can run before React has
-            // rendered/hydrated a given page's .reveal elements, and
-            // nextjs-init.js retries the same setup afterwards. This flag
-            // makes sure only the first pass that actually finds the
-            // element sets up its animation, whichever file that is.
-            if (container.dataset.revealInit) return;
-            container.dataset.revealInit = "1";
-            let image = container.querySelector("img");
-            let tl = gsap.timeline({
-                scrollTrigger: {
-                    trigger: container,
-                    toggleActions: "play none none none",
-                },
-            });
-            tl.set(container, {
-                autoAlpha: 1,
-            });
-            tl.from(container, 1.5, {
-                xPercent: -100,
-                ease: Power2.out,
-            });
-            tl.from(image, 1.5, {
-                xPercent: 100,
-                scale: 1.3,
-                delay: -1.5,
-                ease: Power2.out,
-            });
-        });
-    }
+    // Image Reveal Animation is handled centrally in nextjs-init.js
+    // to properly support Next.js hydration, page transitions, and prevent conflicting timelines.
 
     // ===Main Slider / Banner Carousel===
     if ($(".slider-one__carousel").length) {

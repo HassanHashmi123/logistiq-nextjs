@@ -18,12 +18,10 @@ export default function RouteChangeListener() {
     // Scroll to top cleanly on route change
     window.scrollTo(0, 0);
 
-    // Immediate dispatch to awaken WOW, carousels, and images instantly
-    window.dispatchEvent(new Event('nextjs-route-changed'));
-
+    // Single debounced dispatch to cleanly initialize animations without double-flicker
     const timer = setTimeout(() => {
       window.dispatchEvent(new Event('nextjs-route-changed'));
-    }, 120);
+    }, 60);
 
     return () => clearTimeout(timer);
   }, [pathname]);

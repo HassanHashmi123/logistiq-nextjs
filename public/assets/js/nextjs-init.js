@@ -239,8 +239,9 @@
         if ($(".reveal").length) {
           var revealContainers = document.querySelectorAll(".reveal");
           revealContainers.forEach(function(container) {
-            if (container.dataset.revealActive) return;
+            if (container.dataset.revealActive || container.dataset.revealInit) return;
             container.dataset.revealActive = "true";
+            container.dataset.revealInit = "1";
 
             var image = container.querySelector("img");
             if (!image) return;
@@ -255,8 +256,8 @@
                 toggleActions: "play none none none",
               },
             });
-            tl.from(container, 0.9, { xPercent: -100, ease: "power2.out" });
-            tl.from(image, 0.9, { xPercent: 100, scale: 1.15, delay: -0.9, ease: "power2.out" });
+            tl.from(container, 1.1, { xPercent: -100, ease: "power2.out" });
+            tl.from(image, 1.1, { xPercent: 100, scale: 1.2, delay: -1.1, ease: "power2.out" });
           });
         }
 
@@ -375,16 +376,16 @@
     // Extra fallback in case load event already fired
     setTimeout(initEverything, 1500);
 
-    // Listen for Next.js route changes to re-trigger animations seamlessly
+    // Listen for Next.js route changes to re-trigger animations seamlessly without flickers
+    var routeTimer = null;
     window.addEventListener('nextjs-route-changed', function() {
-      window.__animationsInitialized = false;
-      // Fast first pass to show carousel & images immediately
-      setTimeout(initEverything, 60);
-      // Second pass to ensure correct heights and triggers after paint
-      setTimeout(function() {
+      if (routeTimer) {
+        clearTimeout(routeTimer);
+      }
+      routeTimer = setTimeout(function() {
         window.__animationsInitialized = false;
         initEverything();
-      }, 260);
+      }, 50);
     });
   });
 })();
