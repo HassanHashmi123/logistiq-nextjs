@@ -167,15 +167,13 @@ export default function IndexOnePage() {
                 
 
                 <div className="banner-one__content">
-                    <div className="banner-one__content-left wow fadeInLeft" data-wow-delay="0ms"
-                        data-wow-duration="1500ms">
+                    <div className="banner-one__content-left">
                         <h2>Modern Logistic <br />
                             <span>Transport</span></h2>
                         <p>Specialist In Modern <br /> Transportation </p>
                     </div>
 
-                    <div className="banner-one__content-right wow fadeInRight" data-wow-delay="0ms"
-                        data-wow-duration="1500ms">
+                    <div className="banner-one__content-right">
                         <div className="banner-one__content-right-text">
                             <p>Logistic service provider company plays a pivotal role <br />
                                 in the global supply chain ecosystem managing.</p>

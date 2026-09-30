@@ -385,7 +385,7 @@
       routeTimer = setTimeout(function() {
         window.__animationsInitialized = false;
         initEverything();
-      }, 50);
+      }, 20);
     });
   });
 })();

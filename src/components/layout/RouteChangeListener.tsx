@@ -18,10 +18,10 @@ export default function RouteChangeListener() {
     // Scroll to top cleanly on route change
     window.scrollTo(0, 0);
 
-    // Single debounced dispatch to cleanly initialize animations without double-flicker
+    // Fast debounced dispatch to cleanly initialize animations without delays or flickers
     const timer = setTimeout(() => {
       window.dispatchEvent(new Event('nextjs-route-changed'));
-    }, 60);
+    }, 10);
 
     return () => clearTimeout(timer);
   }, [pathname]);
